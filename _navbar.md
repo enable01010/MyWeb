@@ -2,7 +2,7 @@
 <!-- ![Logo](https://yourdomain/logo.png ':height=30')  -->
 * [ホーム](README.md)
 
-授業一覧
+* 授業一覧
 <ul class="nav-dropdown">
   <li>
     <ul>
