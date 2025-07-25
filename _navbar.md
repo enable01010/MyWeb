@@ -1,8 +1,9 @@
 <!-- _navbar.md -->
 <!-- ![Logo](https://yourdomain/logo.png ':height=30')  -->
 * [ホーム](README.md)
-<ul class="nav-dropdown">
+
 授業一覧
+<ul class="nav-dropdown">
   <li>
     <ul>
       <li><a href="Curriculum2023.md">23年 高等部</a></li>
