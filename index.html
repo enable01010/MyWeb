@@ -44,7 +44,7 @@
   display: block;
   padding: 0.5rem 1rem;
   text-decoration: none;
-  color: inherit;
+  color: black;
 }
 
 .nav-dropdown ul {
@@ -68,11 +68,11 @@
   display: block;
   padding: 0.5rem 1rem;
   white-space: nowrap;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .nav-dropdown ul li a:hover {
-  background-color: #eee;
+  background-color: #000000;
 }
 
 /* Docsify の _navbar.md によって生成されるナビバーの背景色を変更 */
@@ -93,4 +93,27 @@
   text-decoration: underline;
 }
 
+.app-nav {
+  display: flex;
+  align-items: center;
+  background-color: #2b8be6;
+  padding: 0.5rem 1rem;
+  gap: 1rem;
+}
+
+.app-nav img {
+  height: 30px;
+  vertical-align: middle;
+}
+
+.app-nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.app-nav li {
+  margin-right: 1rem;
+}
 </style>
