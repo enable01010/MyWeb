@@ -15,21 +15,35 @@
 Console.Write("Hellow");
 ```
 
-<!-- 警告表示の書き方 -->
-> [!NOTE]
-> 補足などのメッセージ
+<!-- NOTE -->
+<div style="border-left: 5px solid #2d9cdb; background: #e8f4fd; padding: 0.8em; margin: 1em 0;">
+  <strong>💡 補足：</strong><br>
+  補足などのメッセージ
+</div>
 
-> [!TIP]
-> tipのメッセージ
+<!-- TIP -->
+<div style="border-left: 5px solid #27ae60; background: #eafaf1; padding: 0.8em; margin: 1em 0;">
+  <strong>✅ TIP：</strong><br>
+  tipのメッセージ
+</div>
 
-> [!IMPORTANT]
-> 重要なメッセージ
+<!-- IMPORTANT -->
+<div style="border-left: 5px solid #f39c12; background: #fff7e6; padding: 0.8em; margin: 1em 0;">
+  <strong>📌 重要：</strong><br>
+  重要なメッセージ
+</div>
 
-> [!WARNING]
-> 警告のメッセージ
+<!-- WARNING -->
+<div style="border-left: 5px solid #e67e22; background: #fff3e0; padding: 0.8em; margin: 1em 0;">
+  <strong>⚠️ 警告：</strong><br>
+  警告のメッセージ
+</div>
 
-> [!CAUTION]
-> より強い警告のメッセージ
+<!-- CAUTION -->
+<div style="border-left: 5px solid #c0392b; background: #fdecea; padding: 0.8em; margin: 1em 0;">
+  <strong>🚨 注意：</strong><br>
+  より強い警告のメッセージ
+</div>
 
 <!-- 説明リスト -->
 <dl>
@@ -47,16 +61,4 @@ Console.Write("Hellow");
 </dl>
 
 <!-- 動画 -->
-<iframe width="560" height="315" 
-src="https://youtu.be/w-ljjhmQz5E?si=5arTceH3u_KiyQmD" 
-title="YouTube video player" 
-frameborder="0" allowfullscreen>
-</iframe>
-
-<iframe width="560" height="315" 
-        src="https://youtu.be/w-ljjhmQz5E?si=5arTceH3u_KiyQmD" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        allowfullscreen>
-</iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hFZGztobbq8?si=c3Y79bOMmh6cFjDf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
