@@ -1,4 +1,3 @@
-# 書き換えたよ
+# Guide
 
 > An awesome project.
-
