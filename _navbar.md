@@ -4,7 +4,7 @@
 
 * [ホーム](README.md)
 
-* <a href="--">授業一覧</a>
+* <div style="color: whilte;">授業一覧</div>
 <ul class="nav-dropdown">
     <li><a href="#/HighSchool_2023/Title.md">23年 高等部</a></li>
     <li><a href="#/HighSchool_2024/Title.md">24年 高等部</a></li>
