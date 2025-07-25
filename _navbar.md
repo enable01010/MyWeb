@@ -4,7 +4,7 @@
 
 * [ホーム](README.md)
 
-* 授業一覧
+* <font color="#ffffffff">授業一覧</font>
 <ul class="nav-dropdown">
     <li><a href="#/HighSchool_2023/Title.md">23年 高等部</a></li>
     <li><a href="#/HighSchool_2024/Title.md">24年 高等部</a></li>
