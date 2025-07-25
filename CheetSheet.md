@@ -48,13 +48,13 @@ Console.Write("Hellow");
 
 <!-- 動画 -->
 <iframe width="560" height="315" 
-src="https://youtu.be/hFZGztobbq8?si=q6ieeW1U1pWSwLyj" 
+src="https://youtu.be/w-ljjhmQz5E?si=5arTceH3u_KiyQmD" 
 title="YouTube video player" 
 frameborder="0" allowfullscreen>
 </iframe>
 
 <iframe width="560" height="315" 
-        src="https://youtu.be/hFZGztobbq8?si=q6ieeW1U1pWSwLyj" 
+        src="https://youtu.be/w-ljjhmQz5E?si=5arTceH3u_KiyQmD" 
         title="YouTube video player" 
         frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
