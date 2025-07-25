@@ -48,7 +48,7 @@ Console.Write("Hellow");
 
 <!-- 動画 -->
 <iframe width="560" height="315" 
-src="https://www.youtube.com/watch?v=hFZGztobbq8" 
+src="https://youtu.be/hFZGztobbq8?si=q6ieeW1U1pWSwLyj" 
 title="YouTube video player" 
 frameborder="0" allowfullscreen>
 </iframe>
