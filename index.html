@@ -27,3 +27,51 @@
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 </body>
 </html>
+
+<style>
+.nav-dropdown {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.nav-dropdown > li {
+  position: relative;
+}
+
+.nav-dropdown > li > a {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-dropdown ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 0;
+  margin: 0;
+  border-radius: 4px;
+  z-index: 999;
+}
+
+.nav-dropdown li:hover > ul {
+  display: block;
+}
+
+.nav-dropdown ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  color: black;
+}
+
+.nav-dropdown ul li a:hover {
+  background-color: #eee;
+}
+</style>
