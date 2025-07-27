@@ -1,4 +1,2 @@
 <!-- docs/_sidebar.md -->
-  - [Title](README.md)
-  - [CheetSheet](CheetSheet.md#チートシート)
-  
+  - [ホーム](README.md)
