@@ -1,7 +1,7 @@
 # 出力
 ## 文字列の出力
 文字の表示はprintf()を使って表示する事が出来ます。
-```
+```cpp
 string text = "paiza";
 printf(paiza.c_str());
 ```
@@ -12,7 +12,7 @@ printf(paiza.c_str());
 
 ## 数値の出力
 数値の表示はフォーマット指定子を使う事で表示する事が出来ます。
-```
+```cpp
 int number = 0;
 printf("%d",number);
 ```
@@ -23,7 +23,7 @@ printf("%d",number);
 
 ## 改行の出力
 改行の表示はエスケープシーケンスを使う事で表示する事が出来ます。
-```
+```cpp
 int number1 = 0;
 int number2 = 1;
 printf("%d",number1);
@@ -38,7 +38,7 @@ printf("%d",number2);
 
 ## 複雑な出力
 フォーマット指定子やエスケープシーケンスを組み合わせる事で複雑な文章を表示する事が出来ます。
-```
+```cpp
 string text = "text";
 int number = 123;
 printf("%s\n%d\nあいうえお",text,number);
