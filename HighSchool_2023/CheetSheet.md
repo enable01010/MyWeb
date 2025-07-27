@@ -75,6 +75,7 @@ getline(cin,text);
   getlineはstring型でしか受け取ることが出来ません。
   数値を受け取りたい場合は下記の内容が必要です。
 </div>
+
 ```clike
 string text;
 getline(cin,text);
