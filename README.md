@@ -1,19 +1,5 @@
 # ホーム
 
-<style>
-.nav-dropdown li {
-  list-style: none;
-}
-
-.nav-dropdown a {
-  display: inline;         /* ← インライン表示に */
-  padding: 0;              /* ← 余白を除去 */
-  margin: 0;
-  text-decoration: none;   /* 必要なら下線を非表示に */
-  color: inherit;          /* 親の文字色を継承（お好み） */
-}
-</style>
-
 > 授業一覧
 
 <ul class="nav-dropdown">
