@@ -37,6 +37,23 @@
 </head>
 
 <body>
+  <h1>GitHub Pages</h1>
+  <p>以下のリンクからREADME.mdをタイムスタンプ付きで確認できます:</p>
+  
+  <!-- リンクにタイムスタンプを追加する部分 -->
+  <a id="readme-link" href="#">README.mdを表示</a>
+
+  <script>
+    window.onload = function() {
+      // 現在の時刻（UNIXタイムスタンプ）を取得
+      const timestamp = new Date().getTime();
+
+      // README.mdのURLにタイムスタンプを追加
+      const readmeUrl = "https://username.github.io/repository-name/README.md?t=" + timestamp;
+      document.getElementById("readme-link").href = readmeUrl;
+    };
+  </script>
+
   <div id="app"></div>
 
   <script>
