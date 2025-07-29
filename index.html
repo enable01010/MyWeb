@@ -7,7 +7,17 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-  <script src="script.js?t=<?php echo time(); ?>"></script>
+  <link id="css-link" rel="stylesheet" href="styles.css">
+  <script id="js-script" src="script.js"></script>
+
+  <script>
+    // 現在の時刻（UNIXタイムスタンプ）を取得
+    const timestamp = new Date().getTime();
+
+    // CSSとJSファイルのリンクにタイムスタンプを追加
+    document.getElementById("css-link").href = "styles.css?t=" + timestamp;
+    document.getElementById("js-script").src = "script.js?t=" + timestamp;
+  </script>
 </head>
 <body>
   <div id="app"></div>
