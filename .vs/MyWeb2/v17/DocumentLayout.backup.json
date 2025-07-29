@@ -51,7 +51,8 @@
               "RelativeToolTip": "_navbar.md",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-07-29T02:54:35.773Z"
+              "WhenOpened": "2025-07-29T02:54:35.773Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -63,7 +64,8 @@
               "RelativeToolTip": "HighSchool_2025\\_sidebar.md",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-07-29T02:54:22.475Z"
+              "WhenOpened": "2025-07-29T02:54:22.475Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -75,7 +77,8 @@
               "RelativeToolTip": "HighSchool_2025\\CheetSheet.md",
               "ViewState": "AgIAAMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-07-29T02:54:14.481Z"
+              "WhenOpened": "2025-07-29T02:54:14.481Z",
+              "EditorCaption": ""
             }
           ]
         }
