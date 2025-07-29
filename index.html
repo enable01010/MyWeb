@@ -37,20 +37,18 @@
 </head>
 
 <body>
-  <h1>GitHub Pages</h1>
-  <p>以下のリンクからREADME.mdをタイムスタンプ付きで確認できます:</p>
-  
-  <!-- リンクにタイムスタンプを追加する部分 -->
-  <a id="readme-link" href="#">README.mdを表示</a>
-
   <script>
+    // 現在のURLにタイムスタンプを追加してリダイレクト
     window.onload = function() {
-      // 現在の時刻（UNIXタイムスタンプ）を取得
       const timestamp = new Date().getTime();
+      const currentUrl = window.location.href;
 
-      // README.mdのURLにタイムスタンプを追加
-      const readmeUrl = "https://username.github.io/repository-name/README.md?t=" + timestamp;
-      document.getElementById("readme-link").href = readmeUrl;
+      // もしURLに既にパラメータがある場合、&で追加、それ以外は?で追加
+      const separator = currentUrl.includes('?') ? '&' : '?';
+      const newUrl = currentUrl + separator + 't=' + timestamp;
+
+      // 新しいURLにリダイレクト
+      window.location.href = newUrl;
     };
   </script>
 
