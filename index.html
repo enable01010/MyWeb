@@ -1,18 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>授業資料</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
+  <!-- キャッシュ制御: 以下のmetaタグを追加 -->
   <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
+
+  <title>授業資料</title>
+
+  <!-- DocsifyテーマCSS -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+
+  <!-- タイムスタンプを追加するCSSファイル -->
+  <link id="css-link" rel="stylesheet" href="styles.css">
+
+  <!-- タイムスタンプを追加するJSファイル -->
+  <script id="js-script" src="script.js"></script>
+
+  <script>
+    // ページが完全に読み込まれてから実行するようにする
+    window.onload = function () {
+      // 現在の時刻（UNIXタイムスタンプ）を取得
+      const timestamp = new Date().getTime();
+
+      // CSSとJSファイルのリンクにタイムスタンプを追加
+      document.getElementById("css-link").href = "styles.css?t=" + timestamp;
+      document.getElementById("js-script").src = "script.js?t=" + timestamp;
+    };
+  </script>
 </head>
 
-</head>
 <body>
   <div id="app"></div>
 
@@ -32,90 +55,100 @@
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 </body>
+
 </html>
 
 <style>
-/* ここにカスタムCSSを書くことができます */
-.nav-dropdown {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  position: relative;
-}
+  /* ここにカスタムCSSを書くことができます */
+  /* ナビゲーションドロップダウン */
+  .nav-dropdown {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
 
-.nav-dropdown > li {
-  position: relative;
-  list-style: none;
-}
+  .nav-dropdown > li {
+    position: relative;
+    list-style: none;
+  }
 
-.nav-dropdown > li > a {
-  text-decoration: none;
-  color: black;
-  display: inline;
-  padding: 0;
-  margin: 0;
-}
+  .nav-dropdown > li > a {
+    text-decoration: none;
+    color: black;
+    display: inline;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    font-weight: bold;
+  }
 
-.nav-dropdown ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: white;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  padding: 0;
-  margin: 0;
-  border-radius: 4px;
-  z-index: 999;
-}
+  .nav-dropdown ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+    z-index: 999;
+  }
 
-.nav-dropdown li:hover > ul {
-  display: block;
-}
+  .nav-dropdown li:hover > ul {
+    display: block;
+  }
 
-.nav-dropdown ul li a {
-  display: block;
-  padding: 0.5rem 1rem;
-  white-space: nowrap;
-  color: rgb(255, 255, 255);
-}
+  .nav-dropdown ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: black;
+    white-space: nowrap;
+  }
 
-.nav-dropdown ul li a:hover {
-  background-color: #000000;
-}
+  .nav-dropdown ul li a:hover {
+    background-color: #f0f0f0;
+  }
 
-/* リンクの色も調整（必要に応じて） */
-.app-nav a {
-  color: white;
-  text-decoration: none;
-  margin-right: 1rem;
-}
+  /* ヘッダーナビゲーションバー */
+  .app-nav {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 0.5rem 1rem;
+    gap: 1rem;
+  }
 
-.app-nav a:hover {
-  text-decoration: underline;
-}
+  .app-nav img {
+    height: 30px;
+    vertical-align: middle;
+  }
 
-.app-nav {
-  display: flex;
-  align-items: center;
-  background-color: #989898;
-  padding: 0.5rem 1rem;
-  gap: 1rem;
-}
+  .app-nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 
-.app-nav img {
-  height: 30px;
-  vertical-align: middle;
-}
+  .app-nav li {
+    margin-right: 1rem;
+  }
 
-.app-nav ul {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+  .app-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
 
-.app-nav li {
-  margin-right: 1rem;
-}
+  .app-nav a:hover {
+    text-decoration: underline;
+  }
+
+  /* リンクホバー時のスタイル */
+  .app-nav li:hover {
+    background-color: #444;
+    border-radius: 5px;
+    padding: 0.3rem;
+  }
 </style>
