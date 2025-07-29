@@ -6,11 +6,11 @@ VisualStuidoを開いて、コンソールアプリ　(C++,windows,コンソー�
 
 
 新しいプロジェクトの作成<br>
-![Logo](https://enable01010.github.io/MyWeb/Image/VS_HowCreate_1.png){:height="300"}<br>
+![Logo](https://enable01010.github.io/MyWeb/Image/VS_HowCreate_1.png){: width="300" height="150"}<br>
 プロジェクトの種類選択<br>
-![Logo](https://enable01010.github.io/MyWeb/Image/VS_HowCreate_2.png){:height="300"}<br>
+![Logo](https://enable01010.github.io/MyWeb/Image/VS_HowCreate_2.png){: width="100" height="50"}<br>
 プロジェクトの名前（自分の名前をいれてください）<br>
-![Logo](https://enable01010.github.io/MyWeb/Image/VS_HowCreate_3.png){:height="300"}<br>
+![Logo](https://enable01010.github.io/MyWeb/Image/VS_HowCreate_3.png){: width="600" height="300"}<br>
 
 自動生成されたプログラムをすべて削除して、下記のプログラムを貼り付けてください。
 ~~~ clike
