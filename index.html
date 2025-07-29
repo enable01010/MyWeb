@@ -17,15 +17,12 @@
   <script id="js-script" src="script.js"></script>
 
   <script>
-    // ページが完全に読み込まれてから実行するようにする
-    window.onload = function() {
-      // 現在の時刻（UNIXタイムスタンプ）を取得
+   // 現在の時刻（UNIXタイムスタンプ）を取得
       const timestamp = new Date().getTime();
 
-      // CSSとJSファイルのリンクにタイムスタンプを追加
-      document.getElementById("css-link").href = "styles.css?t=" + timestamp;
-      document.getElementById("js-script").src = "script.js?t=" + timestamp;
-    };
+      // README.mdのURLにタイムスタンプを追加
+      const readmeUrl = "https://username.github.io/repository-name/README.md?t=" + timestamp;
+      document.getElementById("readme-link").href = readmeUrl;
   </script>
 
 </head>
