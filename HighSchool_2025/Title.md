@@ -1,4 +1,4 @@
-# 2023年度　高等部
+# 2025年度　高等部
 
 <div style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
     <div style="

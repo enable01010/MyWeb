@@ -3,28 +3,13 @@
 ## 問題の取り込みかた
 VisualStuidoを開いて、コンソールアプリ　(C++,windows,コンソール）のプロジェクトで、<br>
 プロジェクト名を自分の名前にして作成してください.。
-![Logo](https://enable01010.github.io/MyWeb/VS_HowCreate.png)
+![Logo](https://enable01010.github.io/MyWeb/Image/VS_HowCreate.png)
 
 自動生成されたプログラムをすべて削除して、下記のプログラムを貼り付けてください。
 ~~~ clike
 #include <iostream>
 #include <string>
 using namespace std;
-
-int main()
-{
-    Question1();
-    // Question2();
-    // Question3();
-    // Question4();
-    // Question5();
-    // Question6();
-    // Question7();
-    // Question8();
-    // Question9();
-    // Question10();
-
-}
 
 void Question1()
 {
@@ -91,18 +76,6 @@ void Question10()
     // キャラクターの初期座標はx = 0, y = 0です。
 }
 
-~~~
-
-## 問題の解き方
-int main(）の中に関数が用意してあります。<br>
-その関数の中身を実装してください。<br>
-例：問題1を解く場合（答えは間違っています。）<br>
-
-~~~ clike
-#include <iostream>
-#include <string>
-using namespace std;
-
 int main()
 {
     Question1();
@@ -118,6 +91,18 @@ int main()
 
 }
 
+~~~
+
+## 問題の解き方
+問題用の関数が用意されています<br>
+その関数の中身を実装してください。<br>
+例：問題1を解く場合（答えは間違っています。）<br>
+
+~~~ clike
+#include <iostream>
+#include <string>
+using namespace std;
+
 void Question1()
 {
     // 3*5の計算をプログラムで行い出力してください。
@@ -129,6 +114,7 @@ void Question1()
 ~~~
 
 ## 問題の切り替え方
+プログラムの一番下にint main()があります。<br>
 int main()の中にある関数のコメントアウトを入れ替える事で表示する問題をきりかえる事ができます。<br>
 例：問題2を解く場合
 ~~~ clike
