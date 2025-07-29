@@ -17,7 +17,7 @@
           パイザのC++でよく使うコーディングのまとめです。</br>
           一通り使いこなせるようにしましょう。
         </p>
-        <a href="#/HighSchool_2023/CheetSheet.md" style="
+        <a href="#/HighSchool_2025/CheetSheet.md" style="
           display: inline-block;
           background-color: #2b8be6;
           color: white;
