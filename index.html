@@ -9,30 +9,33 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <link id="css-link" rel="stylesheet" href="styles.css">
   <script id="js-script" src="script.js"></script>
-
-  <script>
-    // 現在の時刻（UNIXタイムスタンプ）を取得
-    const timestamp = new Date().getTime();
-
-    // CSSとJSファイルのリンクにタイムスタンプを追加
-    document.getElementById("css-link").href = "styles.css?t=" + timestamp;
-    document.getElementById("js-script").src = "script.js?t=" + timestamp;
-  </script>
 </head>
 <body>
   <div id="app"></div>
+
+  <script>
+    // ページが完全に読み込まれてから実行するようにする
+    window.onload = function() {
+      // 現在の時刻（UNIXタイムスタンプ）を取得
+      const timestamp = new Date().getTime();
+
+      // CSSとJSファイルのリンクにタイムスタンプを追加
+      document.getElementById("css-link").href = "styles.css?t=" + timestamp;
+      document.getElementById("js-script").src = "script.js?t=" + timestamp;
+    };
+  </script>
+
   <script>
     window.$docsify = {
       loadNavbar: true,
       loadSidebar: true,
-      alias: {
-      },
+      alias: {},
       auto2top: true,
       scrollToTop: true,
       maxLevel: 3,
       subMaxLevel: 3,
       routerMode: 'hash'
-    }
+    };
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
@@ -40,6 +43,7 @@
 </html>
 
 <style>
+/* 省略: スタイル部分はそのままでOK */
 .nav-dropdown {
   list-style: none;
   padding: 0;
