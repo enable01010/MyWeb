@@ -3,7 +3,14 @@
 ## 問題の取り込みかた
 VisualStuidoを開いて、コンソールアプリ　(C++,windows,コンソール）のプロジェクトで、<br>
 プロジェクト名を自分の名前にして作成してください.。
-![Logo](https://enable01010.github.io/MyWeb/Image/VS_HowCreate.png)
+
+
+新しいプロジェクトの作成<br>
+![Logo](https://enable01010.github.io/MyWeb/Image/VS_HowCreate_1.png ':height=300')
+プロジェクトの種類選択<br>
+![Logo](https://enable01010.github.io/MyWeb/Image/VS_HowCreate_2.png ':height=300')
+プロジェクトの名前（自分の名前をいれてください）
+![Logo](https://enable01010.github.io/MyWeb/Image/VS_HowCreate_3.png ':height=300')
 
 自動生成されたプログラムをすべて削除して、下記のプログラムを貼り付けてください。
 ~~~ clike
