@@ -1,2 +1,1 @@
-  - [ パイザ　C++　チートシート](HighSchool_2025/CheetSheet.md)
-  - [ テスト 7/29](HighSchool_2025/Test1.md)
+  - [ 下記特別講習](HighSchool_2024/SummerSP.md)
