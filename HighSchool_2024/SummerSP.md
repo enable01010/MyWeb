@@ -132,12 +132,12 @@ ENTER　タイトル：ゲームスタート　インゲーム：リスタート
 ### スクリプト解説
 Playerのスクリプトを開いてください。
 #### 変数の使用例
-![Logo](https://enable01010.github.io/MyWeb/Image/SummerPs/hensu.png ':height=500')<br>
+<img src="Image/SummerPs/hensu.png" height="450"><br>
 このように作成したものの一番上に変数を作成するのが一般的です。<br>
 又、変数を作成する際は、できる限りほかの人が見てわかる名前にしましょう。<br>
 ※正しい英語を使うよりも伝わりやすい英語を使いましょう。〇〇ofXXXin△△△　みたいなのは正しくてもやめましょう。<br>
 #### 関数の使用例
-![Logo](https://enable01010.github.io/MyWeb/Image/SummerPs/kansu.png ':height=500')<br>
+<img src="Image/SummerPs/kansu.png" height="450"><br>
 関数はこのように作成します。<br>
 又、前述したようにUpdateの中身が大きくなりそうな場合は、Updateを目次のように使用して関数を並べる形で作成して、<br>
 それぞれの関数がページ見切れない程度にしましょう。<br>
