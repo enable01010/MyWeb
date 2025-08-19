@@ -1,1 +1,1 @@
- - [ 下記特別講習](HighSchool_2024/SummerSP.md)
+ - [ 夏季特別講習](HighSchool_2024/SummerSP.md)
