@@ -44,7 +44,7 @@ void Question2()
 ~~~
 <div style="border-left: 5px solid #2d9cdb; background: #e8f4fd; padding: 0.8em; margin: 1em 0;">
   <strong>💡 解説</strong><br>
-  九九の表などを作成する場合にはfor文を2重にすることで実装することができます。
+  九九の表などを作成する場合にはfor文を2重にすることで実装することができます。<br>
   iの段のj個目の掛け算をすることで表のように表現することができます。
 </div>
 
@@ -77,14 +77,14 @@ void Question3()
 ~~~
 <div style="border-left: 5px solid #2d9cdb; background: #e8f4fd; padding: 0.8em; margin: 1em 0;">
   <strong>💡 解説</strong><br>
-  素数の定義は１とその数以外で割り切れない数字です。
+  素数の定義は１とその数以外で割り切れない数字です。<br>
   なので、プログラムでその数まですべて割り切る作業をしてあげると素数を求めることができます。
 </div>
 
 
 <div style="border-left: 5px solid #f39c12; background: #fff7e6; padding: 0.8em; margin: 1em 0;">
   <strong>📌 重要：</strong><br>
-  Question2の表のようなfor文の使い方とQuestion3のようなi番目までの要素すべてを再確認するような使い方は、
+  Question2の表のようなfor文の使い方とQuestion3のようなi番目までの要素すべてを再確認するような使い方は、<br>
   for文の活用例としてよく見かけます。なんとなくでいいので、数値の動きをイメージできるようにしましょう。
 </div>
 
@@ -117,9 +117,9 @@ void Question4()
 
 <div style="border-left: 5px solid #2d9cdb; background: #e8f4fd; padding: 0.8em; margin: 1em 0;">
   <strong>💡 解説</strong><br>
-  C++の言語では、findを使うことで、文字列に含まれているかどうかを判定することができます。
-  input.find(target)の回答が-1であれば含まれていない。
-  それ以外であればどこかしらに含まれている状態になります。
+  C++の言語では、findを使うことで、文字列に含まれているかどうかを判定することができます。<br>
+  input.find(target)の回答が-1であれば含まれていない。<br>
+  それ以外であればどこかしらに含まれている状態になります。<br>
   このfindはパイザで稀に使うので覚えておくと便利でしょう。
 </div>
 
@@ -168,8 +168,8 @@ void Question6()
 
 <div style="border-left: 5px solid #2d9cdb; background: #e8f4fd; padding: 0.8em; margin: 1em 0;">
   <strong>💡 解説</strong><br>
-    偶数奇数の判断は2で割ったときのあまりがあるかないかで判断することができます。
-    （〇〇で割り切れる数も同様にできます。）
+    偶数奇数の判断は2で割ったときのあまりがあるかないかで判断することができます。<br>
+    （〇〇で割り切れる数も同様にできます。）<br>
     ゲームでも偶数プレイヤーのみ〇〇等の処理が多々あるので覚えておきましょう。
 </div>
 
@@ -201,8 +201,8 @@ void Question7()
 ~~~
 <div style="border-left: 5px solid #2d9cdb; background: #e8f4fd; padding: 0.8em; margin: 1em 0;">
   <strong>💡 解説</strong><br>
-    for文を活用することで特定の要素の中の一番大きい数字や小さい数字を選出することができます。
-    下の問題のソートと組み合わせて使うことが多いです。
+    for文を活用することで特定の要素の中の一番大きい数字や小さい数字を選出することができます。<br>
+    下の問題のソートと組み合わせて使うことが多いです。<br>
     覚えておきましょう。
 </div>
 
@@ -248,7 +248,7 @@ void Question8()
 
 <div style="border-left: 5px solid #2d9cdb; background: #e8f4fd; padding: 0.8em; margin: 1em 0;">
   <strong>💡 解説</strong><br>
-    ソートはゲーム製作でもよく見かけます。
+    ソートはゲーム製作でもよく見かけます。<br>
     ランキング表示など、比較的によく使うので調べて実装できるようにしておきましょう。
 </div>
 
@@ -298,8 +298,8 @@ void Question9()
 ~~~
 <div style="border-left: 5px solid #2d9cdb; background: #e8f4fd; padding: 0.8em; margin: 1em 0;">
   <strong>💡 解説</strong><br>
-    この辺からは発展問題になります。
-    この問題で大切なのは、データを分割して受け取ることです。
+    この辺からは発展問題になります。<br>
+    この問題で大切なのは、データを分割して受け取ることです。<br>
     データを分割して受け取れたら、それを区別して並べてあげることで判定をすることができます。
 </div>
 
@@ -352,8 +352,8 @@ void Question10()
 
 <div style="border-left: 5px solid #2d9cdb; background: #e8f4fd; padding: 0.8em; margin: 1em 0;">
   <strong>💡 解説</strong><br>
-    for文の中でも入力を受け取ったりすることはできます。
-    指定の回数入力を受け取ってあげることで、
+    for文の中でも入力を受け取ったりすることはできます。<br>
+    指定の回数入力を受け取ってあげることで、<br>
     Ｘ、Ｙのデータを適切に管理することができます。
 </div>
 
