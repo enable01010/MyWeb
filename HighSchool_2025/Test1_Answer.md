@@ -220,25 +220,25 @@ void Question8()
     {
         cin >> numbers[i];
     }
-
+    
     for (int i = 0; i < 10;i++)
     {
         int min = 999999999;
         int count = i;
         for (int j = i; j < 10;j++)
         {
-            if (min > j)
+            if (min > numbers[j])
             {
-                min = j;
+                min = numbers[j];
                 count = j;
             }
         }
-
+    
         int temp = numbers[i];
         numbers[i] = numbers[count];
         numbers[count] = temp;
     }
-
+    
     for (int i = 0; i < 10;i++)
     {
         printf("%d", numbers[i]);
