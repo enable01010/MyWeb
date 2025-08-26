@@ -13,11 +13,11 @@
   ">
     <img src="Image/Test.png" alt="C言語テスト回答" style="width: 100%; display: block;" />
     <div style="padding: 1rem;">
-      <h3 style="margin-top: 0;">前期の復習</h3>
+      <h3 style="margin-top: 0;">テスト回答</h3>
       <p style="font-size: 0.9rem; color: #333; line-height: 1.5;">
         前回の授業で行ったテストの解説になります。
       </p>
-      <a href="#/HighSchool_2024/Test1_Answer.md" style="
+      <a href="#/HighSchool_2025/Test1_Answer.md" style="
         display: inline-block;
         background-color: #2b8be6;
         color: white;
