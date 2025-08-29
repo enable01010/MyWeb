@@ -301,7 +301,9 @@ PrefabフォルダーないのArrowプレハブをコピーして、名前をArr
 同様にspeedの低いプレハブを用意すると遅い矢が実装できます。<br>
 
 ### ・一定量進んだら折り返す<br>
-<!--
+CircleMoveCenterMoveのdir変数の前にpublic staticをつけます。<br>
+Vector3 dir; →　public static Vector3 dir;<br>
+
 ~~~ clike
 public class CircleMoveReturnMove : MonoBehaviour
 {
@@ -332,7 +334,6 @@ public class CircleMoveReturnMove : MonoBehaviour
     }
 }
 ~~~
--->
 
 ### ・触っても死なない、得点UP<br>
 <!--
@@ -365,3 +366,32 @@ public class CircleMoveHitArrowDestroy : MonoBehaviour
 
 +CircleMoveScoreManagerのint scoreをpublic static int scoreに変更<br><br>
 ### ・内側から動く矢<br>
+
+<!--
+~~~ clike
+public class CircleMoveCenterStart : MonoBehaviour
+{
+    CircleMoveCenterMove move;
+
+    private void Start()
+    {
+        // コンポーネント取得
+        move = GetComponent<CircleMoveCenterMove>();
+
+        // 移動方向反転
+        move.dir *= -1;
+
+        // 位置を中央にする
+        transform.position = Vector3.zero;
+
+        // 向きを反転
+        Vector3 angle = transform.eulerAngles;
+        angle.z += 180;
+        transform.eulerAngles = angle;
+    }
+}
+~~~
+-->
+
+### 生成されたときのプレイヤーの位置に、向かって動く矢
+### 断続的に動く矢
