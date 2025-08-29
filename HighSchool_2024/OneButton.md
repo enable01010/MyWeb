@@ -329,4 +329,32 @@ public class CircleMoveReturnMove : MonoBehaviour
 
 
 ・触っても死なない、得点UP<br>
+
+~~~ clike
+public class CircleMoveScoreUp : MonoBehaviour
+{
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.name =="Player")
+        {
+            CircleMoveScoreManager.score++;
+        }
+    }
+}
+~~~
+
+~~~ clike
+public class CircleMoveHitArrowDestroy : MonoBehaviour
+{
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "Player")
+        {
+            Destroy(gameObject);
+        }
+    }
+}
+~~~
+
++CircleMoveScoreManagerのint scoreをpublic static int scoreに変更<br><br>
 ・内側から動く矢<br>
