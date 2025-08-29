@@ -296,7 +296,7 @@ public class LineMoveLineSwitch : MonoBehaviour
 CircleMoveでまっすぐ進む矢以外のオブジェクトを作成してみましょう。<br>
 ・早い矢、遅い矢<br>
 ・一定量進んだら折り返す<br>
-
+<!--
 ~~~ clike
 public class CircleMoveReturnMove : MonoBehaviour
 {
@@ -327,10 +327,10 @@ public class CircleMoveReturnMove : MonoBehaviour
     }
 }
 ~~~
-
+-->
 
 ・触っても死なない、得点UP<br>
-
+<!--
 ~~~ clike
 public class CircleMoveScoreUp : MonoBehaviour
 {
@@ -356,6 +356,7 @@ public class CircleMoveHitArrowDestroy : MonoBehaviour
     }
 }
 ~~~
+-->
 
 +CircleMoveScoreManagerのint scoreをpublic static int scoreに変更<br><br>
 ・内側から動く矢<br>
