@@ -294,7 +294,12 @@ public class LineMoveLineSwitch : MonoBehaviour
 
 ##　みんなで作ってみよう
 CircleMoveでまっすぐ進む矢以外のオブジェクトを作成してみましょう。<br>
-・早い矢、遅い矢<br>
+・早い矢、遅い矢<br><br>
+PrefabフォルダーないのArrowプレハブをコピーして、名前をArrowFastにします。<br>
+その後ArrowFastのCircleMoveCengterMoveのシリアライズフィールドのspeedを15に設定します。<br>
+そのプレハブをヒエラルキーのArrowCreaterのPrefsに入れると早い矢が実装できます。<br>
+同様にspeedの低いプレハブを用意すると遅い矢が実装できます。<br>
+
 ・一定量進んだら折り返す<br>
 <!--
 ~~~ clike
