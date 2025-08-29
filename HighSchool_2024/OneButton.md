@@ -295,5 +295,38 @@ public class LineMoveLineSwitch : MonoBehaviour
 CircleMoveでまっすぐ進む矢以外のオブジェクトを作成してみましょう。<br>
 ・早い矢、遅い矢<br>
 ・一定量進んだら折り返す<br>
+
+~~~ clike
+public class CircleMoveReturnMove : MonoBehaviour
+{
+
+    [SerializeField] float returnTime = 3.0f;
+    float time; //　経過時間
+
+    CircleMoveCenterMove move;
+
+    private void Awake()
+    {
+        move = GetComponent<CircleMoveCenterMove>();
+    }
+
+    private void Update()
+    {
+        time += Time.deltaTime;
+        if (time > returnTime)
+        {
+            move.dir *= -1;
+
+            Vector3 angle = transform.eulerAngles;
+            angle.z += 180;
+            transform.eulerAngles = angle;
+
+            enabled = false;
+        }
+    }
+}
+~~~
+
+
 ・触っても死なない、得点UP<br>
 ・内側から動く矢<br>
