@@ -290,3 +290,9 @@ public class LineMoveLineSwitch : MonoBehaviour
   左右を１回だけ入れ替えてほしいですが、１回動作したらそれ以降動かないでほしい場合に、
   enableをfalseにすることでプログラムのUpdateを止めると便利です。
 </div>
+
+##　みんなで作ってみよう
+CircleMoveでまっすぐ進む矢以外のオブジェクトを作成してみましょう。<br>
+・早い矢、遅い矢<br>
+・一定量進んだら折り返す<br>
+・触っても死なない、得点UP<br>
