@@ -294,13 +294,13 @@ public class LineMoveLineSwitch : MonoBehaviour
 
 ##　みんなで作ってみよう
 CircleMoveでまっすぐ進む矢以外のオブジェクトを作成してみましょう。<br>
-・早い矢、遅い矢<br><br>
+### ・早い矢、遅い矢<br><br>
 PrefabフォルダーないのArrowプレハブをコピーして、名前をArrowFastにします。<br>
 その後ArrowFastのCircleMoveCengterMoveのシリアライズフィールドのspeedを15に設定します。<br>
 そのプレハブをヒエラルキーのArrowCreaterのPrefsに入れると早い矢が実装できます。<br>
 同様にspeedの低いプレハブを用意すると遅い矢が実装できます。<br>
 
-・一定量進んだら折り返す<br>
+### ・一定量進んだら折り返す<br>
 <!--
 ~~~ clike
 public class CircleMoveReturnMove : MonoBehaviour
@@ -334,7 +334,7 @@ public class CircleMoveReturnMove : MonoBehaviour
 ~~~
 -->
 
-・触っても死なない、得点UP<br>
+### ・触っても死なない、得点UP<br>
 <!--
 ~~~ clike
 public class CircleMoveScoreUp : MonoBehaviour
@@ -364,4 +364,4 @@ public class CircleMoveHitArrowDestroy : MonoBehaviour
 -->
 
 +CircleMoveScoreManagerのint scoreをpublic static int scoreに変更<br><br>
-・内側から動く矢<br>
+### ・内側から動く矢<br>
