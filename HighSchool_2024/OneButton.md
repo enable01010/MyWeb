@@ -5,6 +5,7 @@
 Unity6　Universal2Dでプロジェクトを作成してくだしさい。<br>
 生成されたら、Sceneフォルダーを消してください。<br>
 その後パブリックに上がってるデータすべてをAsset直下に入れてください。<br>
+さらに、Edit＞Preject Setting ＞　TextMeshProの上のボタンをいれてください。
 
 ## ゲームの確認
 3種類のゲームが作ってあります。<br>
