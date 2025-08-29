@@ -371,7 +371,6 @@ public class CircleMoveHitArrowDestroy : MonoBehaviour
 
 ### ・内側から動く矢<br>
 
-<!--
 Arrowプレハブをコピーして下記のスクリプトをアタッチする。
 ・CircleMoveCenterStart → 生成された後位置を中心にして、オブジェクトの向きを反転する
 
@@ -398,7 +397,7 @@ public class CircleMoveCenterStart : MonoBehaviour
     }
 }
 ~~~
--->
+
 ### 断続的に動く矢
 <!--
 Arrowプレハブをコピーして下記のスクリプトをアタッチする。
