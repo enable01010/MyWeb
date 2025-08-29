@@ -399,9 +399,9 @@ public class CircleMoveCenterStart : MonoBehaviour
 ~~~
 
 ### 断続的に動く矢
-<!--
-Arrowプレハブをコピーして下記のスクリプトをアタッチする。
-CircleMoveStopAndMove → 移動用のスクリプトを時間でOnOffする
+Arrowプレハブをコピーして下記のスクリプトをアタッチする。<br>
+CircleMoveStopAndMove → 移動用のスクリプトを時間でOnOffする<br>
+
 
 ~~~ clike
 public class CircleMoveStopAndMove : MonoBehaviour
@@ -437,6 +437,36 @@ public class CircleMoveStopAndMove : MonoBehaviour
     }
 }
 ~~~
--->
 
 ### 生成されたときのプレイヤーの位置に、向かって動く矢
+
+<!--
+同じようにArrowプレハブのコピーを作って下記のプログラムをアタッチします。<br>
+CircleMoveMoveToPlayer　→　生成時にプレイヤーの位置を検索して、その方向に向かっうようにdirと角度を調整する。<br>
+
+~~~ clike
+public class CircleMoveMoveToPlayer : MonoBehaviour
+{
+    CircleMoveCenterMove move;
+
+    private void Start()
+    {
+        // プレイヤーを検索
+        Transform target = GameObject.Find("Triangle").transform;
+
+        //　コンポーネントを取得
+        move = GetComponent<CircleMoveCenterMove>();
+
+        //　移動方向をプレイヤーの方向に変更
+        move.dir = (target.position - transform.position).normalized;
+
+        // 角度をプレイヤー側に向ける
+        Vector3 distance = target.position - transform.position;
+        // 角度を取得
+        float angle = Mathf.Atan2(distance.y, distance.x);
+        //　回転
+        transform.eulerAngles = new Vector3(0, 0, angle * Mathf.Rad2Deg);
+    }
+}
+~~~
+-->
