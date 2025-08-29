@@ -10,7 +10,7 @@
       transition: transform 0.2s, box-shadow 0.2s;
       margin-bottom: 2rem;
     ">
-      <img src="Image/C#.png" alt="C#画像" style="width: 100%; display: block;" />
+      <img src="Image/Csharp.png" alt="C#画像" style="width: 100%; display: block;" />
       <div style="padding: 1rem;">
         <h3 style="margin-top: 0;">夏期講習</h3>
         <p style="font-size: 0.9rem; color: #333; line-height: 1.5;">
@@ -37,7 +37,7 @@
       transition: transform 0.2s, box-shadow 0.2s;
       margin-bottom: 2rem;
     ">
-      <img src="Image/C#.png" alt="OneButton画像" style="width: 100%; display: block;" />
+      <img src="Image/HighSchool_2025/OneButtonTitle.png" alt="OneButton画像" style="width: 100%; display: block;" />
       <div style="padding: 1rem;">
         <h3 style="margin-top: 0;">OneButtonゲーム</h3>
         <p style="font-size: 0.9rem; color: #333; line-height: 1.5;">
