@@ -2,7 +2,9 @@
 
 ## Unityプロジェクト作成
 <img src="Image/HighSchool_2025/OneButtonCreate.png" height="450"><br>
-Unity6　Universal2Dでプロジェクトを作成してくだしさい。
+Unity6　Universal2Dでプロジェクトを作成してくだしさい。<br>
+生成されたら、Sceneフォルダーを消してください。<br>
+その後パブリックに上がってるデータすべてをAsset直下に入れてください。<br>
 
 ## ゲームの確認
 3種類のゲームが作ってあります。<br>
