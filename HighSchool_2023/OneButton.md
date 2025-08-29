@@ -440,7 +440,6 @@ public class CircleMoveStopAndMove : MonoBehaviour
 
 ### 生成されたときのプレイヤーの位置に、向かって動く矢
 
-<!--
 同じようにArrowプレハブのコピーを作って下記のプログラムをアタッチします。<br>
 CircleMoveMoveToPlayer　→　生成時にプレイヤーの位置を検索して、その方向に向かっうようにdirと角度を調整する。<br>
 
@@ -469,4 +468,3 @@ public class CircleMoveMoveToPlayer : MonoBehaviour
     }
 }
 ~~~
--->
