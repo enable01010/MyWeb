@@ -301,8 +301,8 @@ PrefabフォルダーないのArrowプレハブをコピーして、名前をArr
 同様にspeedの低いプレハブを用意すると遅い矢が実装できます。<br>
 
 ### ・一定量進んだら折り返す<br>
-CircleMoveCenterMoveのdir変数の前にpublic staticをつけます。<br>
-Vector3 dir; →　public static Vector3 dir;<br>
+CircleMoveCenterMoveのdir変数の前にpublicをつけます。<br>
+Vector3 dir; →　public Vector3 dir;<br>
 
 ~~~ clike
 public class CircleMoveReturnMove : MonoBehaviour
@@ -336,7 +336,12 @@ public class CircleMoveReturnMove : MonoBehaviour
 ~~~
 
 ### ・触っても死なない、得点UP<br>
-<!--
++CircleMoveScoreManagerのint scoreをpublic static int scoreに変更<br><br>
+Arrowプレハブのコピーを作成して、ArrowのCircleMoveHitDestroyをRemoveする<br>
+下記のスクリプトをアタッチする。<br>
+・CircleMoveScoreUp → プレイヤーに当たった時にスコアをプラスする<br>
+・CircleMoveHitArrowDestroy → プレイヤーに当たった時に自身を破棄する<br><br>
+
 ~~~ clike
 public class CircleMoveScoreUp : MonoBehaviour
 {
@@ -362,12 +367,14 @@ public class CircleMoveHitArrowDestroy : MonoBehaviour
     }
 }
 ~~~
--->
 
-+CircleMoveScoreManagerのint scoreをpublic static int scoreに変更<br><br>
+
 ### ・内側から動く矢<br>
 
 <!--
+Arrowプレハブをコピーして下記のスクリプトをアタッチする。
+・CircleMoveCenterStart → 生成された後位置を中心にして、オブジェクトの向きを反転する
+
 ~~~ clike
 public class CircleMoveCenterStart : MonoBehaviour
 {
@@ -392,6 +399,45 @@ public class CircleMoveCenterStart : MonoBehaviour
 }
 ~~~
 -->
+### 断続的に動く矢
+<!--
+Arrowプレハブをコピーして下記のスクリプトをアタッチする。
+CircleMoveStopAndMove → 移動用のスクリプトを時間でOnOffする
+
+~~~ clike
+public class CircleMoveStopAndMove : MonoBehaviour
+{
+    //　移動用コンポーネント
+    CircleMoveCenterMove move;
+
+    
+    bool isStop = false;//　移動切り替えフラグ
+    [SerializeField] float stopPitch = 1.0f;//切り替えピッチ
+    float time;//経過時間
+
+
+    private void Start()
+    {
+        move = GetComponent<CircleMoveCenterMove>();
+    }
+
+    private void Update()
+    {
+        time += Time.deltaTime;
+        if(time > stopPitch)
+        {
+            // 時間をリセット
+            time = 0;
+
+            //　フラグを反転
+            isStop = !isStop;
+
+            //　移動スクリプトの切り替え
+            move.enabled = !isStop;
+        }
+    }
+}
+~~~
+-->
 
 ### 生成されたときのプレイヤーの位置に、向かって動く矢
-### 断続的に動く矢
