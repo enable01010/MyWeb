@@ -1,4 +1,4 @@
-# 2024年度　高等部
+# 2023年度　高等部
 
 <div style="display: flex; flex-wrap: wrap; gap: 1.5rem;">
   <div style="
@@ -17,7 +17,7 @@
           先生の方で用意したゲームをもとに<br>
           Unityでのゲーム製作の際によく使うプログラムを勉強していきましょう。
         </p>
-        <a href="#/HighSchool_2024/OneButton.md" style="
+        <a href="#/HighSchool_2023/OneButton.md" style="
           display: inline-block;
           background-color: #2b8be6;
           color: white;
