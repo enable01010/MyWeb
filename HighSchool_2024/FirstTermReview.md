@@ -164,6 +164,151 @@ class Program
 
 ## Unity
 ### よく使う処理
+### 当たったオブジェクト判定
+何かのオブジェクトに当たった際にプログラムを走らせたい事は多々あります。<br>
+OnTrgger系とOnCollision系は覚えておきましょう。<br>
+~~~ clike
+using UnityEngine;
+
+public class LineMoveNodeDestroy : MonoBehaviour
+{
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //　プレイヤーに当たった際にノードを破棄
+        if (collision.gameObject.name == "Player")
+        {
+            //　ノードを削除
+            Destroy(gameObject);
+        }
+    }
+}
+~~~
+
+<div style="border-left: 5px solid #2d9cdb; background: #e8f4fd; padding: 0.8em; margin: 1em 0;">
+  <strong>💡 解説</strong><br>
+  今回はプレイヤーに当たった場合に自身を破棄するプログラムの例です。（LineMoveNodeDestroy.cs）<br>
+  上と同じようにDestroyの部分を書き換えれば色々な事ができます。<br>
+  また、例文のifで行っているようにcollisionからオブジェクト情報を取得して、<br>
+  特定のオブジェクトだった場合のみ処理をするようなプログラムを作ることもできます。<br>
+</div>
+
+
+### Transformでの移動
+なにも移動させずにゲームを作ることはほぼ不可能でしょう。<br>
+Transformを使ったオブジェクトの移動もできるようになっておきましょう。<br>
+
+~~~ clike
+public class CircleMoveCenterMove : MonoBehaviour
+{
+    [SerializeField] float speed = 3.0f; // 移動速度
+    Vector3 dir; // 移動方向
+
+    private void Start()
+    {
+        // 中央に向けての方向と距離を取得
+        Vector3 distance = Vector3.zero - transform.position;
+
+        // 取得した方向と距離を方向だけに修正
+        dir = distance.normalized;
+    }
+
+    private void Update()
+    {
+        // 中央に向けて移動
+        Vector3 nextPos = transform.position;
+        nextPos += speed * Time.deltaTime * dir;
+        transform.position = nextPos;
+    }
+}
+~~~
+<div style="border-left: 5px solid #2d9cdb; background: #e8f4fd; padding: 0.8em; margin: 1em 0;">
+  <strong>💡 解説</strong><br>
+  今回は中央向きにまっすぐ進み続けるプログラムです。（CircleMoveCenterMove.cs）<br>
+  Startのタイミングで移動方向の計算をして、
+  Updateで計算した方向に進み続けています。
+</div>
+
+### ガード節
+プログラムでif文だらけになって見にくい状態になるのを防ぐ際に使います。<br>
+例えばプレイヤーが死んでいなかったらなど、Ｕｐｄａｔｅ全体を回さない場合などに使うと便利です。<br>
+
+~~~ clike
+public class CircleMoveScoreManager : MonoBehaviour
+{
+    //　コンポーネント
+    TextMeshProUGUI tmp;
+    int score;//スコア
+    [SerializeField] float scoreUpTime = 1.0f;//スコアが上がる間隔
+    float time = 0;//経過時間
+
+    private void Awake()
+    {
+        // コンポーネント取得
+        tmp = GetComponent<TextMeshProUGUI>();
+    }
+
+    private void Update()
+    {
+        // プレイヤーが終了している場合は処理しない
+        if (CircleMovePlayer.isEnd == true) return;
+
+        // 一定時間経過で処理
+        time += Time.deltaTime;
+        if(time > scoreUpTime)
+        {
+            //　タイムリセット
+            time = 0;
+
+            //　タイム追加
+            score++;
+        }
+        
+        //　スコア表示リセット
+        tmp.text = "score:" + score;
+    }
+}
+~~~
+<div style="border-left: 5px solid #2d9cdb; background: #e8f4fd; padding: 0.8em; margin: 1em 0;">
+  <strong>💡 解説</strong><br>
+  今回のはプレイヤーが生きてる限り時間を計測して、スコアを上げていくプログラムです。（CircleMoveScoreManager.cs）<br>
+　プレイヤーが死んでいると一番上のif文でスクリプトが終了して、<br>
+　プログラムが動作しないようになっています。
+</div>
+
+### Updateを止める
+1回だけ起動したいようなプログラムを実施したい場合が多々あります。
+そういった際に便利です。
+~~~ clike
+public class LineMoveLineSwitch : MonoBehaviour
+{
+    [SerializeField] float switchTime = 3;　//　左右入れ替わるまでの時間
+    float time; // 経過時間
+
+    private void Update()
+    {
+        //　一定時間が経過したら実行
+        time += Time.deltaTime;
+        if(time >= switchTime)
+        {   
+            //　左右を入れ替える
+            Vector3 nextPos = transform.position;
+            nextPos.x *= -1;
+            transform.position = nextPos;
+
+            // プログラムを止める
+            this.enabled = false;
+        }
+    }
+}
+~~~
+<div style="border-left: 5px solid #2d9cdb; background: #e8f4fd; padding: 0.8em; margin: 1em 0;">
+  <strong>💡 解説</strong><br>
+  今回はLineMoveの左右を一定時間後に入れ替えるプログラムです。（LineMoveLineSwitch.cs）<br>
+  左右を１回だけ入れ替えてほしいですが、１回動作したらそれ以降動かないでほしい場合に、
+  enableをfalseにすることでプログラムのUpdateを止めると便利です。
+</div>
+
+
 ## 就活に向けて
 ### 就活の開始時期
 ### ポートフォリオ
