@@ -1,3 +1,3 @@
  - [ 夏季特別講習](HighSchool_2024/SummerSP.md)
  - [OneButtonゲーム](HighSchool_2024/OneButton.md)
- - [前期の復習 ](HightSchool_2024/FirstTermReview.md)
+ - [前期の復習 ](HighSchool_2024/FirstTermReview.md)

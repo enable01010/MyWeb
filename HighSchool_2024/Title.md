@@ -71,7 +71,7 @@
         <p style="font-size: 0.9rem; color: #333; line-height: 1.5;">
           前期の最終日なので、これまでの復習を行います。
         </p>
-        <a href="#/HighSchool_2024/OneButton.md" style="
+        <a href="#/HighSchool_2024/FirstTermReview.md" style="
           display: inline-block;
           background-color: #2b8be6;
           color: white;
