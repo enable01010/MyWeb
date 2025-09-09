@@ -1,0 +1,91 @@
+# JumpKing
+
+## プロジェクトの作成
+Unity6　SRP　Universal2Dでプロジェクトを作成してください。<br>
+フォルダーとプロジェクト名は自由ですが、わかりやすく名前はJumpKing等にすることをお勧めします。<br>
+
+## 作成するゲームの説明
+JumpKingのようなゲームを作成します。<br>
+A,Dキーで移動し、スペースキーを押し続けてジャンプを溜めて、放した時に溜め量でジャンプの大きさが変わります。<br>
+
+## 画像素材等の取り込み
+Publicフォルダーの皆さんのところに9.9データというフォルダーがあります。<br>
+その中のファイルを立ち上がったUnityプロジェクトにドラック＆ドロップしてください。<br>
+
+## プレイヤープログラムの実施
+### 横に水平移動する
+新しい　Move.cs　プログラムを作成して、下記のようにプログラムしてください。<br>
+<img src="Image/HighSchool_2025/JumpKingMove.png" height="450"><br>
+
+実装できたらシーンのPlayerにプログラムをアタッチして、動作確認をしてみましょう。<br>
+
+### ジャンプするプログラム
+続いてジャンプするプログラム＜ Jump.cs　＞も作成しましょう。<br>
+<img src="Image/HighSchool_2025/JumpKingJump.png" height="450"><br>
+
+同じく実装できたらシーンのPlayerにプログラムをアタッチして、動作確認をしてみましょう。<br>
+
+<div style="border-left: 5px solid #2d9cdb; background: #e8f4fd; padding: 0.8em; margin: 1em 0;">
+  <strong>💡　注意</strong><br>
+  現状としては、連続でジャンプしたり、ジャンプ中に水平移動もできてしまします。
+  それらはこれから直していきます。
+</div>
+
+### 着地判定のプログラム
+着地しているときにだけ移動やジャンプができるようにしてみましょう。<br>
+新しく　GroundCheck.csプログラムを作成して、Playerの中のGroundCheckにアタッチしましょう。<br>
+又、Move.csスクリプトとJump.csプログラムも修正しましょう。<br>
+<br>
+
+GroundCheck.cs<br>
+<img src="Image/HighSchool_2025/JumpKingGroundCheck.png" height="450"><br>
+プログラムをPlayerの中のGroundCheckにアタッチした後、プレイヤーのアニメーターをシリアライズする必要があります<br>
+<br>
+Move.cs<br>
+<img src="Image/HighSchool_2025/JumpKingMove2.png" height="450"><br>
+<br>
+Jump.cs<br>
+<img src="Image/HighSchool_2025/JumpKingJump2.png" height="450"><br>
+<br>
+
+<div style="border-left: 5px solid #2d9cdb; background: #e8f4fd; padding: 0.8em; margin: 1em 0;">
+  <strong>💡　注意</strong><br>
+  今回のガード節での使い方のように<br>
+  アニメーターからプログラムの状態を取得すると比較的簡単に状況の管理ができると思います。<br>
+  しかし、基本的にプログラムのメリットはトレードオフになっており、<br>
+  今回のを逆に言うとバグが発生しやすい箇所でもあるので、気をつけて使用しましょう。<br>
+</div>
+
+### 単一責任というプログラムにおいて重要な考え方
+今回のプログラムを作成していて、全部プレイヤーに関する処理なのだから、Player.cs一個にしたらいいんじゃないか？<br>
+と思った方もいると思います。<br>
+端的に言うと、Player.csというクラスはおすすめしません。（学生には）<br>
+なぜかというと、プログラムが複雑になり、読むのも追記するのも難しくなりがちだからです。<br>
+プログラムを限界ギリギリまで分けて書く考え方を単一責任と言ったりします。<br>
+この単一責任の考え方でプログラムを書くと下記のようなメリットがあります。<br>
+・プログラムの実装が簡単<br>
+・プログラムのテストが簡単<br>
+・プログラムをほかの人が見たときに分かりやすい<br>
+・プログラムがバグりにくい<br>
+
+## マップ作製
+### タイルマップの使い方
+この授業はC言語の授業のためUnityの細かい機能の説明は割愛します。<br>
+今回は最低限マップを追加するための手順を紹介します。<br>
+<br>
+まずは、シーンビューを開いた状態で。<br>
+ヒエラルキーの中にあるGridの中にあるTileMapを選択した状態で。<br>
+シーンビュー右下に表示されるOpenTilePalletをクリックします。<br>
+<img src="Image/HighSchool_2025/JumpKingOpenTilePallet.png" height="450"><br>
+
+
+筆のマークがアクティブな状態で、<br>
+追加で表示されたタイルパレットの中の画面に追加したいものを選択します。<br>
+その後、シーンビューでお絵かきのようにマップを追加することができます。<br>
+このような機能のことをタイルマップといいます。<br>
+<img src="Image/HighSchool_2025/JumpKingTilePallet.png" height="450"><br>
+
+## ちょっと難しいプログラムの実践編
+### 壁に当たった場合の判断
+### 斜めの床の判定
+### ヒットストップの実施
