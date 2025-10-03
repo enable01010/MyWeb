@@ -7,7 +7,7 @@
 
 # 今日作成していくゲーム
 <!-- 動画 -->
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xXXEHgmp0O4?si=ouNIdFQE6UhvttYo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="500" src="https://www.youtube.com/embed/xXXEHgmp0O4?si=ouNIdFQE6UhvttYo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 # ベクトルとは
 "向き"と"大きさ"のデータの事です。<br>
@@ -32,28 +32,41 @@ Unity6　Universal2D　タイトル：VectorGame <br>
 
 ## 背景を黒色にする
 カメラのEnviromentにあるBackgroundを黒色にしましょう。<br>
-<img src="Image/HighSchool_2024/VectorCameraSetting.png" height="450"><br>
+<img src="Image/HighSchool_2024/VectorCameraSetting.png"><br>
 
 ## 移動範囲を作成する
 画像と同じ階層になるようにオブジェクトを作成してください。
-<img src="Image/HighSchool_2024/AreaHieralky.png" height="450"><br>
-<img src="Image/HighSchool_2024/AreaIns.png" height="450"><br>
-<img src="Image/HighSchool_2024/FrameIns.png" height="450"><br>
-<img src="Image/HighSchool_2024/InnerIns.png" height="450"><br>
+<img src="Image/HighSchool_2024/AreaHieralky.png"><br>
+<img src="Image/HighSchool_2024/AreaIns.png"><br>
+<img src="Image/HighSchool_2024/FrameIns.png"><br>
+<img src="Image/HighSchool_2024/InnerIns.png"><br>
 
 ## プレイヤーの移動プログラムを作成する
 Publicに本日の画像データが入っています。それを取り込んでください。<br>
 \\10.80.100.100\Public\07_24年入学生用\プログラマー\高等部３年制ゲームプログラマー専攻\谷山講師\10.03データ\Image<br>
-そうしたらPlayerMove.csを作成して、下記のプログラムを作成してください。
-<img src="Image/HighSchool_2024/PlayerMove.png" height="450"><br>
+そうしたらPlayerMove.csを作成して、下記のプログラムを作成してください。<br>
+<img src="Image/HighSchool_2024/PlayerMove.png"><br>
 <br>
 プログラムができたらPlayerのオブジェクトを作成します。<br>
-<img src="Image/HighSchool_2024/PlayerHie.png" height="450"><br>
-<img src="Image/HighSchool_2024/PlayerIns.png" height="450"><br>
-<img src="Image/HighSchool_2024/PlayerViewIns.png" height="450"><br>
-<img src="Image/HighSchool_2024/PlayerScene.png" height="450"><br>
+<img src="Image/HighSchool_2024/PlayerHie.png" ><br>
+<img src="Image/HighSchool_2024/PlayerIns.png" ><br>
+<img src="Image/HighSchool_2024/PlayerViewIns.png"><br>
+<img src="Image/HighSchool_2024/PlayerScene.png"><br>
+
+実行してみて動けたらOKです。<br>
 
 ## 玉の移動プログラムを作成する
+下記2つのプログラムを作成してください。<br>
+BulletMove.cs<br>
+BulletPlayerDirSelecter.cs<br>
+<img src="Image/HighSchool_2024/BulletMove.png"><br>
+<img src="Image/HighSchool_2024/BulletPlayerMoveDirSelector.png"><br>
+できたらBulletのオブジェクトを作成します。<br>
+<img src="Image/HighSchool_2024/BulletPlayerDirHie.png"><br>
+<img src="Image/HighSchool_2024/BulletPlayerDirIns.png"><br>
+<img src="Image/HighSchool_2024/BulletMove.png"><br>
+<img src="Image/HighSchool_2024/BulletPlayerDirScene.png"><br>
+
 ## プレイヤーのHP管理用のプログラムを作成する
 ## 玉のあたり判定用プログラムを作成する
 ## 回復アイテムを作成してみる
