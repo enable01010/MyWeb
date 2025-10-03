@@ -64,7 +64,7 @@ BulletPlayerDirSelecter.cs<br>
 できたらBulletのオブジェクトを作成します。<br>
 <img src="Image/HighSchool_2024/BulletPlayerDirHie.png"><br>
 <img src="Image/HighSchool_2024/BulletPlayerDirIns.png"><br>
-<img src="Image/HighSchool_2024/BulletMove.png"><br>
+<img src="Image/HighSchool_2024/BulletPlayerDirView.png"><br>
 <img src="Image/HighSchool_2024/BulletPlayerDirScene.png"><br>
 
 <br>
