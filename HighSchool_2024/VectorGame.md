@@ -93,4 +93,11 @@ Create→UI→Sliderでオブジェクトを生成して、写真の内容にイ
 ## 玉の移動方向にバリエーションをつける
 弾の処理を参考に、シリアライズフィールドの方向に発射する玉を作ってみましょう。<br>
 
-## 玉の発射を制御するスクリプトを作成する（次の授業になると思います。）
+## 玉の発射を制御するスクリプトを作成する
+<img src="Image/HighSchool_2024/EnemyAttack0.png"><br>
+<img src="Image/HighSchool_2024/EnemyAttack1.png"><br>
+<img src="Image/HighSchool_2024/EnemyAttack2.png"><br>
+<img src="Image/HighSchool_2024/EnemyAttack3.png"><br>
+<img src="Image/HighSchool_2024/EnemyAttack4.png"><br>
+<img src="Image/HighSchool_2024/EnemyAttack5.png"><br>
+<img src="Image/HighSchool_2024/EnemyAttack6.png"><br>
