@@ -42,6 +42,17 @@ Unity6　Universal2D　タイトル：VectorGame <br>
 <img src="Image/HighSchool_2024/InnerIns.png" height="450"><br>
 
 ## プレイヤーの移動プログラムを作成する
+Publicに本日の画像データが入っています。それを取り込んでください。<br>
+\\10.80.100.100\Public\07_24年入学生用\プログラマー\高等部３年制ゲームプログラマー専攻\谷山講師\10.03データ\Image<br>
+そうしたらPlayerMove.csを作成して、下記のプログラムを作成してください。
+<img src="Image/HighSchool_2024/PlayerMove.png" height="450"><br>
+<br>
+プログラムができたらPlayerのオブジェクトを作成します。<br>
+<img src="Image/HighSchool_2024/PlayerHie.png" height="450"><br>
+<img src="Image/HighSchool_2024/PlayerIns.png" height="450"><br>
+<img src="Image/HighSchool_2024/PlayerViewIns.png" height="450"><br>
+<img src="Image/HighSchool_2024/PlayerScene.png" height="450"><br>
+
 ## 玉の移動プログラムを作成する
 ## プレイヤーのHP管理用のプログラムを作成する
 ## 玉のあたり判定用プログラムを作成する
