@@ -35,7 +35,7 @@ Unity6　Universal2D　タイトル：VectorGame <br>
 <img src="Image/HighSchool_2024/VectorCameraSetting.png"><br>
 
 ## 移動範囲を作成する
-画像と同じ階層になるようにオブジェクトを作成してください。
+画像と同じ階層になるようにオブジェクトを作成してください。<br>
 <img src="Image/HighSchool_2024/AreaHieralky.png"><br>
 <img src="Image/HighSchool_2024/AreaIns.png"><br>
 <img src="Image/HighSchool_2024/FrameIns.png"><br>
@@ -67,8 +67,30 @@ BulletPlayerDirSelecter.cs<br>
 <img src="Image/HighSchool_2024/BulletMove.png"><br>
 <img src="Image/HighSchool_2024/BulletPlayerDirScene.png"><br>
 
+<br>
+弾はPlayerの方向に動くようになったが、あたりの処理はしていないと思います。<br>
+<br>
+
 ## プレイヤーのHP管理用のプログラムを作成する
+下記のプログラムを作成して、Playerにアタッチしてください。<br>
+PlayerHit.cs<br>
+<img src="Image/HighSchool_2024/PlayerHit.png"><br>
+そうしたらPlayerのHp表示用のオブジェクトを作成します。<br>
+Create→UI→Sliderでオブジェクトを生成して、写真の内容にインスペクターを修正してください。<br>
+<img src="Image/HighSchool_2024/SliderHie.png"><br>
+<img src="Image/HighSchool_2024/SliderBackgournd.png"><br>
+<img src="Image/HighSchool_2024/SliderFillArea.png"><br>
+<img src="Image/HighSchool_2024/SliderFill.png"><br>
+<img src="Image/HighSchool_2024/PlayerHitIns.png"><br>
+
 ## 玉のあたり判定用プログラムを作成する
+下記のスクリプトを作成してBulletのオブジェクトにアタッチしてください。<br>
+<img src="Image/HighSchool_2024/BulletHit.png"><br>
+
 ## 回復アイテムを作成してみる
+弾の処理を参考に回復アイテムを作ってみましょう。<br>
+
 ## 玉の移動方向にバリエーションをつける
+弾の処理を参考に、シリアライズフィールドの方向に発射する玉を作ってみましょう。<br>
+
 ## 玉の発射を制御するスクリプトを作成する（次の授業になると思います。）
