@@ -7,7 +7,7 @@
 
 # 今日作成していくゲーム
 <!-- 動画 -->
-<iframe width="560" height="315" src="https://youtu.be/xXXEHgmp0O4?si=2kPhlqi2sKIDxn0y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtu.be/xXXEHgmp0O4?si=Yv7Ig6o0ihcOiyrY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 # ベクトルとは
 "向き"と"大きさ"のデータの事です。<br>
@@ -31,7 +31,16 @@ Unity6　Universal2D　タイトル：VectorGame <br>
 でUnityのプロジェクトを作成してください。<br>
 
 ## 背景を黒色にする
+カメラのEnviromentにあるBackgroundを黒色にしましょう。<br>
+<img src="Image/HighSchool_2024/VectorCameraSetting.png" height="450"><br>
+
 ## 移動範囲を作成する
+画像と同じ階層になるようにオブジェクトを作成してください。AreaHieralky.png
+<img src="Image/HighSchool_2024/AreaHieralky.png" height="450"><br>
+<img src="Image/HighSchool_2024/AreaIns.png" height="450"><br>
+<img src="Image/HighSchool_2024/FrameIns.png" height="450"><br>
+<img src="Image/HighSchool_2024/InnerIns.png" height="450"><br>
+
 ## プレイヤーの移動プログラムを作成する
 ## 玉の移動プログラムを作成する
 ## プレイヤーのHP管理用のプログラムを作成する
