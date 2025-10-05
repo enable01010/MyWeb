@@ -1,0 +1,1 @@
+ - [ パイザ入門](VocationalSchool_2024/PaizaBeginner.md)
