@@ -16,7 +16,7 @@
         <p style="font-size: 0.9rem; color: #333; line-height: 1.5;">
           パイザをC＃で行う際に必要な基礎知識を学びます。
         </p>
-        <a href="#/HighSchool_2024/SummerSP.md" style="
+        <a href="#/VocationalSchool_2024/PaizaBeginner.md" style="
           display: inline-block;
           background-color: #2b8be6;
           color: white;
