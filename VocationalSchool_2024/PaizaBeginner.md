@@ -6,6 +6,13 @@
 <img src="Image/EX_20250927/Self-Introduction1.png"><br>
 <img src="Image/EX_20250927/Self-Introduction2.png"><br>
 
+## 略歴
+2018　デンソー工業学園卒業<br>
+2021　デンソー退社<br>
+2022　バンタン入学<br>
+2024　フリースタイル入社<br>
+2025　ゲームループ入社<br>
+
 # 会社紹介
 http://www.gameloop.co.jp/%e5%88%b6%e4%bd%9c%e5%ae%9f%e7%b8%be/
 
