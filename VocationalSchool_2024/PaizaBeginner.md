@@ -27,6 +27,50 @@ http://www.gameloop.co.jp/%e5%88%b6%e4%bd%9c%e5%ae%9f%e7%b8%be/
 是非、積極的に取り組んでください。<br>
 <br>
 
+### 標準入力・標準出力
+パイザで標準入力を使って、パイザのデータを受け取り、標準出力で結果を出力します。<br>
+~~~ clike
+using System;
+class Program
+{
+	static void Main()
+	{
+		// 標準入力から1行読み込み
+		string input = Console.ReadLine();
+		
+		// 入力された文字列を整数に変換
+		int number = int.Parse(input);
+		
+		// 整数を2倍にして標準出力に表示
+		Console.WriteLine(number * 2);
+	}
+}
+~~~
+<div style="border-left: 5px solid #2d9cdb; background: #e8f4fd; padding: 0.8em; margin: 1em 0;">
+  <strong>💡 解説</strong><br>
+  Console.ReadLine() →　標準入力<br>
+  Console.WriteLine() →　標準出力<br>
+  この標準入力・標準出力は書き方こそ違いますが、他の言語や開発環境でも存在します。<br>
+  例えばUnityではInput.GetKey○○やDebug.Log()などです。<br>
+</div>
+
+### 便利な関数 -Linq-
+C＃やパイソンなどで使えるLinqという便利な関数群があります。<br>
+
+<div style="border-left: 5px solid #2d9cdb; background: #e8f4fd; padding: 0.8em; margin: 1em 0;">
+  <strong>💡 解説</strong><br>
+  具体例として、Linqでよく使う関数をいくつか紹介します。<br>
+  Select() → 配列の各要素に対して指定した関数を適用します。<br>
+  Where() → 配列の各要素に対して指定した条件を満たす要素だけを抽出します。<br>
+  Count() → 配列の要素数を取得します。<br>
+  Sum() → 配列の要素の合計を計算します。<br>
+  Max() → 配列の要素の最大値を取得します。<br>
+  Min() → 配列の要素の最小値を取得します。<br>
+  OrderBy() → 配列の要素を昇順にソートします。<br>
+  OrderByDescending() → 配列の要素を降順にソートします。<br>
+  こんな感じのがあったと覚えておくと、パイザで必要になった時に、調べて使えるようになります。
+</div>
+
 ## 余談- 就活について -
 
 就活は多くの人にとって、初めて自分から動いていかないといけない出来事だと思います。<br>
@@ -65,80 +109,3 @@ Q&A　アドバイスもらったけど、自分の意見のが正しいと思�
 講師も自分の意見が全員に当てはまるとは思っていません。<br>
 自分の意見が完璧ならみんな就活成功するもん。<br>
 <br>
-Q&A スタッフや講師が忙しそうです！<br>
-うるさい仕事しろ！。<br>
-僕を初めとしたバンタンにいる大人は、みんなからお金をもらってる仕事してるんで、<br>
-気兼ね無く頼ったら良いです。<br>
-<br>
-Q&A バンタンから就活の案内全然来ないからまだ大丈夫じゃないんですか？<br>
-大丈夫じゃないです。<br>
-バンタンからの案内はとにかく遅いです。<br>
-下手したら、ゲーム外車じゃなくて、工場系の内定確約系すべりどめ求人が先に来るぐらいです。<br>
-就活は自分たちで進んでいくものです。<br>
-
-### 標準入力・標準出力
-パイザで標準入力を使って、パイザのデータを受け取り、標準出力で結果を出力します。<br>
-~~~ clike
-using System;
-class Program
-{
-	static void Main()
-	{
-		// 標準入力から1行読み込み
-		string input = Console.ReadLine();
-		
-		// 入力された文字列を整数に変換
-		int number = int.Parse(input);
-		
-		// 整数を2倍にして標準出力に表示
-		Console.WriteLine(number * 2);
-	}
-}
-~~~
-<div style="border-left: 5px solid #2d9cdb; background: #e8f4fd; padding: 0.8em; margin: 1em 0;">
-  <strong>💡 解説</strong><br>
-  Console.ReadLine() →　標準入力<br>
-  Console.WriteLine() →　標準出力<br>
-  この標準入力・標準出力は書き方こそ違いますが、他の言語や開発環境でも存在します。<br>
-  例えばUnityではInput.GetKey○○やDebug.Log()などです。<br>
-</div>
-
-### 便利な関数 -Linq-
-C＃やパイソンなどで使えるLinqという便利な関数群があります。<br>
-~~~ clike
-using System;
-using System.Linq;
-class Program
-{
-	static void Main()
-	{
-		// 標準入力から1行読み込み
-		string input = Console.ReadLine();
-		
-		// 入力された文字列をスペースで分割して整数の配列に変換
-		int[] numbers = input.Split(' ').Select(int.Parse).ToArray();
-		
-		// 配列の要素を昇順にソート
-		Array.Sort(numbers);
-		
-		// ソートされた配列を標準出力に表示
-		Console.WriteLine(string.Join(" ", numbers));
-	}
-}
-
-~~~
-
-<div style="border-left: 5px solid #2d9cdb; background: #e8f4fd; padding: 0.8em; margin: 1em 0;">
-  <strong>💡 解説</strong><br>
-  具体例として、Linqでよく使う関数をいくつか紹介します。<br>
-  Select() → 配列の各要素に対して指定した関数を適用します。<br>
-  Where() → 配列の各要素に対して指定した条件を満たす要素だけを抽出します。<br>
-  Count() → 配列の要素数を取得します。<br>
-  Sum() → 配列の要素の合計を計算します。<br>
-  Max() → 配列の要素の最大値を取得します。<br>
-  Min() → 配列の要素の最小値を取得します。<br>
-  OrderBy() → 配列の要素を昇順にソートします。<br>
-  OrderByDescending() → 配列の要素を降順にソートします。<br>
-  こんな感じのがあったと覚えておくと、パイザで必要になった時に、調べて使えるようになります。
-</div>
-
