@@ -373,3 +373,59 @@ public class EnemyAttackManager : MonoBehaviour
 ## カメラ揺れ
 <img src="Image/HighSchool_2024/CamShake.png"><br>
 <img src="Image/HighSchool_2024/PlayerHit_4.png"><br>
+
+## 時間経過でオブジェクトを消す
+<img src="Image/HighSchool_2024/BulletDestroy.png"><br>
+
+# 攻撃を作る際に簡単だけど、面倒臭い方法
+Unityにはアニメーターという機能があります。<br>
+基本的にはアニメーションを作る際に使う機能ですが、<br>
+今回のように固定の動きをさせる際には便利なので紹介します。<br>
+
+まずは適当な場所にアニメーション用のフォルダーを用意します。<br>
+Animatorフォルダーを作成し、さらにその中にAttackPattern_1フォルダーを作成して下さい<br>
+
+そうしたら、Create ＞　Animation　＞　AnimatorController　を作成して、<br>
+AttackPattern_1と名前をつけてください。<br>
+<img src="Image/HighSchool_2024/CreateAnimatorController.png"><br>
+
+次に、　Create　＞　Animation　＞　AnimationCripを作成して、<br>
+AttackPattern_1 と名前をつけてください。<br>
+<img src="Image/HighSchool_2024/CreateAnimationClip.png"><br>
+<img src="Image/HighSchool_2024/AnimatorFolder.png"><br>
+
+次にヒエラルキーにCreateEmptyでからのオブジェクトを作成して、<br>
+名前をAttackPattern_1にしてください。<br>
+<img src="Image/HighSchool_2024/CreateEmpty.png"><br>
+<img src="Image/HighSchool_2024/AttackPattern_1Obj.png"><br>
+
+作成したオブジェクトにAnimatorController（四角い方）をアタッチしてください。<br>
+<img src="Image/HighSchool_2024/AnimatorControllerAttach.png"><br>
+
+AnimatorController（四角い方）をダブルクリックしてください。<br>
+そうすると画像のような画面が開かれると思います。<br>
+<img src="Image/HighSchool_2024/AnimatorControllerView.png"><br>
+
+そうしたら、AnimatorClip(三角の方)をそこにドラッグ＆ドロップしてください<br>
+<img src="Image/HighSchool_2024/ClipDrag.png"><br>
+
+ここからはアニメーションを作成する作業になります。
+まずは下記三つを行ってください。
+・GameViewを開く
+・AnimationClipをダブルクリックする
+・ヒエラルキーのAttackPattern_1を選択する
+<img src="Image/HighSchool_2024/Vector2DSelectAniy1.png"><br>
+<img src="Image/HighSchool_2024/ClipDrag.png"><br>
+
+そうしたら前回作成した、玉（PlayerDir）を必要な数子オブジェクトに配置して、すべて非アクティブにします。<br>
+<img src="Image/HighSchool_2024/BulletSet.png"><br>
+
+そうしたらAnimatorの赤いボタンを押して、録画モードをOnにします。<br>
+<img src="Image/HighSchool_2024/AnimationSave.png"><br>
+
+あとは時間を指定して、オブジェクトを有効にします。<br>
+<img src="Image/HighSchool_2024/AnimationSaveComment.png"><br>
+<img src="Image/HighSchool_2024/AnimatorClipActive.png"><br>
+<img src="Image/HighSchool_2024/AnimationClipActive2.png"><br>
+
+あとは気合で場所と、有効にする時間を調整します。<br>
