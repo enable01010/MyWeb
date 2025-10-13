@@ -112,3 +112,30 @@ class Program
 同じくパイザでは２次元配列を用いて問題に解答することがあります。<br>
 ２次元配列では、Listのような処理をする必要はないので、一般的な２次元配列を使うことをおすすめします。<br>
 
+~~~ clike
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+class Program
+{
+	static void Main()
+	{
+		// 1行目の受取り
+		List<int> input1 = Console.ReadLine()
+			.Split(' ')
+			.Select(int.Parse)
+			.ToList();
+		
+		// 2行目以降の受取り
+		int[,] datas = new int[,]();
+		for(int i = 0; i < input1[0])
+		{
+			datas[i] = Console.ReadLine()
+				.Split(' ')
+				.Select(int.Parse)
+				.ToList();
+		}
+	}
+}
+~~~
