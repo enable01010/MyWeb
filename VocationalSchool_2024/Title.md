@@ -27,7 +27,6 @@
         ">詳細を見る</a>
       </div>
     </div>
-
     <div style="
       max-width: 360px;
       background-color: white;
@@ -55,6 +54,4 @@
         ">詳細を見る</a>
       </div>
     </div>
-
-
 </div>
