@@ -86,7 +86,7 @@ class Program
 		List<int> datas = 
 			input2
 				.Split(' ')			//スペース区切りに変更
-				.Select(int.Parse)	//String→intに変換
+				.Where(int.Parse)	//String→intに変換
 				.OrderBy(n => n)	//小さい順にソート
 				.ToList();			//リストに確定
 
@@ -166,7 +166,7 @@ class Program
 		// 割愛
 
 		// まだ生きてるやつに限定
-		enemies = enemies.Select(n => n.hp > 0).ToList();
+		enemies = enemies.Where(n => n.hp > 0).ToList();
 
 		//　Hp順でソート
 		enemies = enemies.OrderBy(n => n.hp).ToList();
@@ -177,8 +177,8 @@ class Program
 }
 ~~~
 
-### Select
-UnityでLinqを使うときは、SelectとOrderByを使うことが多いです。<br>
+### Where
+UnityでLinqを使うときは、WhereとOrderByを使うことが多いです。<br>
 SelectはListの中から、特定の要素を含んだものだけに変更するときに使います。<br>
 <img src="Image/VocationalSchool_2024/MonstSort.png"><br>
 
