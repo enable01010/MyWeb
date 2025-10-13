@@ -94,10 +94,282 @@ Create→UI→Sliderでオブジェクトを生成して、写真の内容にイ
 弾の処理を参考に、シリアライズフィールドの方向に発射する玉を作ってみましょう。<br>
 
 ## 玉の発射を制御するスクリプトを作成する
-<img src="Image/HighSchool_2024/EnemyAttack0.png"><br>
-<img src="Image/HighSchool_2024/EnemyAttack1.png"><br>
-<img src="Image/HighSchool_2024/EnemyAttack2.png"><br>
-<img src="Image/HighSchool_2024/EnemyAttack3.png"><br>
-<img src="Image/HighSchool_2024/EnemyAttack4.png"><br>
-<img src="Image/HighSchool_2024/EnemyAttack5.png"><br>
-<img src="Image/HighSchool_2024/EnemyAttack6.png"><br>
+<img src="Image/HighSchool_2024/VectorDirAttack_0.png"><br>
+<img src="Image/HighSchool_2024/VectorDirAttack_1.png"><br>
+<img src="Image/HighSchool_2024/VectorDirAttack_2.png"><br>
+
+## この書き方で攻撃パターンを作るとこんな感じになる
+``` clike
+
+using System.Collections;
+using UnityEngine;
+
+public class EnemyAttackManager : MonoBehaviour
+{
+    [SerializeField] GameObject bulletPlayerDir;
+    [SerializeField] GameObject bulletRightDir;
+    [SerializeField] GameObject bulletLeftDir;
+    [SerializeField] GameObject bulletUpDir;
+    [SerializeField] GameObject bulletDownDir;
+
+    private void Awake()
+    {
+        StartCoroutine(AttackRoutine());
+    }
+
+    IEnumerator AttackRoutine()
+    {
+        yield return null;
+
+        while(true)
+        {
+            int rand = Random.Range(1, 7);
+            //　int rand = 2; // テスト用固定
+            switch (rand)
+            {
+                case 1:
+                    yield return StartCoroutine(AttackPattern_1());
+                    break;
+                case 2:
+                    yield return StartCoroutine(AttackPattern_2());
+                    break;
+                case 3:
+                    yield return StartCoroutine(AttackPattern_3());
+                    break;
+                case 4:
+                    yield return StartCoroutine(AttackPattern_4());
+                    break;
+                case 5:
+                    yield return StartCoroutine(AttackPattern_5());
+                    break;
+                case 6:
+                    yield return StartCoroutine(AttackPattern_6());
+                    break;
+            }
+        }
+    }
+     IEnumerator AttackPattern_1()
+    {
+        // 10発、0.2秒ごとにずつ、右と下に弾を撃つ
+        for (int i = 0; i < 10; i++)
+        {
+            Instantiate(bulletRightDir, new Vector3(-3, 2.3f, 0), Quaternion.identity);
+            Instantiate(bulletLeftDir, new Vector3(3, -2.3f, 0), Quaternion.identity);
+            yield return new WaitForSeconds(0.2f);
+        }
+
+        // 発射位置を上下にずらしながら0.5秒ごとに撃つ
+        for (int i = 0; i < 10; i++)
+        {
+            Instantiate(bulletRightDir, new Vector3(-3, 2.3f - i * 0.5f, 0), Quaternion.identity);
+            Instantiate(bulletLeftDir, new Vector3(3, -2.3f + i * 0.5f, 0), Quaternion.identity);
+            yield return new WaitForSeconds(0.5f);
+        }
+
+        // 技の終了後5秒待つ
+        yield return new WaitForSeconds(5.0f);
+    }
+
+    IEnumerator AttackPattern_2()
+    {
+        // 円周を回るように弾を撃つ
+        int bulletCount = 36;
+        float radius = 5.0f;
+        for (int i = 0; i < bulletCount * 2; i++)
+        {
+            float angle = i * 360.0f / bulletCount * Mathf.Deg2Rad;
+            Vector3 spawnPos = new Vector3(Mathf.Cos(angle) * radius, Mathf.Sin(angle) * radius, 0);
+            Instantiate(bulletPlayerDir, spawnPos, Quaternion.identity);
+            yield return new WaitForSeconds(0.1f);
+        }
+
+        // 技の終了後5秒待つ
+        yield return new WaitForSeconds(5.0f);
+    }
+
+    IEnumerator AttackPattern_3()
+    {
+        // 左側が下　、右側が上に移動する弾を撃つ
+        for (int i = 0; i < 10; i++)
+        {
+            for (int j = 0; j < 10; j++)
+            {
+                Instantiate(bulletDownDir, new Vector3(-3 + j * 0.3f, 3.5f, 0), Quaternion.identity);
+                Instantiate(bulletUpDir, new Vector3(3 - j * 0.3f, -3.5f, 0), Quaternion.identity);
+            }
+            yield return new WaitForSeconds(1f);
+        }
+
+        // 技の終了後5秒待つ
+        yield return new WaitForSeconds(5.0f);
+    }
+
+    IEnumerator AttackPattern_4()
+    {
+        // 左側が下　、右側が上に移動する弾を撃つ
+        // さらに、上下に移動する弾も追加
+        for (int i = 0; i < 10; i++)
+        {
+            for (int j = 0; j < 10; j++)
+            {
+                if (i % 2 == 0)
+                {
+                    Instantiate(bulletDownDir, new Vector3(-3 + j * 0.3f, 3.5f, 0), Quaternion.identity);
+                    Instantiate(bulletUpDir, new Vector3(3 - j * 0.3f, -3.5f, 0), Quaternion.identity);
+                }
+                else
+                {
+                    Instantiate(bulletRightDir, new Vector3(-3.5f, -3.0f + j * 0.3f, 0), Quaternion.identity);
+                    Instantiate(bulletLeftDir, new Vector3(3.5f, 3.0f - j * 0.3f, 0), Quaternion.identity);
+                }
+            }
+            yield return new WaitForSeconds(1f);
+        }
+
+        // 技の終了後5秒待つ
+        yield return new WaitForSeconds(5.0f);
+    }
+
+    IEnumerator AttackPattern_5()
+    {
+        //　格子状に弾を撃つ
+        for (int i = 0; i < 15; i++)
+        {
+            for (int j = -5; j <= 5; j += 3)
+            {
+                Instantiate(bulletRightDir, new Vector3(-3.5f, 0.5f * j, 0), Quaternion.identity);
+                Instantiate(bulletDownDir, new Vector3(0.5f * j, 3.5f, 0), Quaternion.identity);
+            }
+            yield return new WaitForSeconds(0.2f);
+        }
+
+        // 格子状の弾の位置を上に上げる
+        for (int i = 0; i < 10; i++)
+        {
+            for (int j = -5; j <= 5; j += 3)
+            {
+                Instantiate(bulletRightDir, new Vector3(-3.5f, 0.5f * j + 0.15f * i, 0), Quaternion.identity);
+                Instantiate(bulletDownDir, new Vector3(0.5f * j, 3.5f, 0), Quaternion.identity);
+            }
+            yield return new WaitForSeconds(0.3f);
+        }
+
+        //　格子状に弾を撃つ
+        for (int i = 0; i < 10; i++)
+        {
+            for (int j = -5; j <= 5; j += 3)
+            {
+                Instantiate(bulletRightDir, new Vector3(-3.5f, 0.5f * j + 1.5f, 0), Quaternion.identity);
+                Instantiate(bulletDownDir, new Vector3(0.5f * j, 3.5f, 0), Quaternion.identity);
+            }
+            yield return new WaitForSeconds(0.2f);
+        }
+
+        for (int i = 0; i < 10; i++)
+        {
+            for (int j = -5; j <= 5; j += 3)
+            {
+                Instantiate(bulletRightDir, new Vector3(-3.5f, 0.5f * j + 1.5f, 0), Quaternion.identity);
+                Instantiate(bulletDownDir, new Vector3(0.5f * j + 0.15f * i, 3.5f, 0), Quaternion.identity);
+            }
+            yield return new WaitForSeconds(0.3f);
+        }
+
+        for (int i = 0; i < 10; i++)
+        {
+            for (int j = -5; j <= 5; j += 3)
+            {
+                Instantiate(bulletRightDir, new Vector3(-3.5f, 0.5f * j + 1.5f, 0), Quaternion.identity);
+                Instantiate(bulletDownDir, new Vector3(0.5f * j + 1.5f, 3.5f, 0), Quaternion.identity);
+            }
+            yield return new WaitForSeconds(0.2f);
+        }
+
+        for (int i = 0; i < 10; i++)
+        {
+            for (int j = -5; j <= 5; j += 3)
+            {
+                Instantiate(bulletRightDir, new Vector3(-3.5f, 0.5f * j + 1.5f - 0.15f * i, 0), Quaternion.identity);
+                Instantiate(bulletDownDir, new Vector3(0.5f * j + 1.5f, 3.5f, 0), Quaternion.identity);
+            }
+            yield return new WaitForSeconds(0.3f);
+        }
+
+        for (int i = 0; i < 10; i++)
+        {
+            for (int j = -5; j <= 5; j += 3)
+            {
+                Instantiate(bulletRightDir, new Vector3(-3.5f, 0.5f * j, 0), Quaternion.identity);
+                Instantiate(bulletDownDir, new Vector3(0.5f * j + 1.5f, 3.5f, 0), Quaternion.identity);
+            }
+            yield return new WaitForSeconds(0.2f);
+        }
+
+        for (int i = 0; i < 10; i++)
+        {
+            for (int j = -5; j <= 5; j += 3)
+            {
+                Instantiate(bulletRightDir, new Vector3(-3.5f, 0.5f * j, 0), Quaternion.identity);
+                Instantiate(bulletDownDir, new Vector3(0.5f * j + 1.5f - 0.15f * i, 3.5f, 0), Quaternion.identity);
+            }
+            yield return new WaitForSeconds(0.3f);
+        }
+
+        for (int i = 0; i < 10; i++)
+        {
+            for (int j = -5; j <= 5; j += 3)
+            {
+                Instantiate(bulletRightDir, new Vector3(-3.5f, 0.5f * j, 0), Quaternion.identity);
+                Instantiate(bulletDownDir, new Vector3(0.5f * j, 3.5f, 0), Quaternion.identity);
+            }
+            yield return new WaitForSeconds(0.2f);
+        }
+
+        // 技の終了後5秒待つ
+        yield return new WaitForSeconds(5.0f);
+    }
+
+    IEnumerator AttackPattern_6()
+    {
+        for (int i = 0; i < 10; i++)
+        {
+            for (int j = -5; j <= 5; j += 2)
+            {
+                if (i % 2 == 0)
+                {
+                    Instantiate(bulletPlayerDir, new Vector3(0.35f * j, 3.5f, 0), Quaternion.identity);
+                }
+                else
+                {
+                    Instantiate(bulletPlayerDir, new Vector3(0.35f * j, -3.5f, 0), Quaternion.identity);
+                }
+            }
+            yield return new WaitForSeconds(1.0f);
+        }
+
+        // 技の終了後5秒待つ
+        yield return new WaitForSeconds(5.0f);
+    }
+}
+
+```
+# ゲームでちょくちょく使う小物をちゃんと作る
+
+## HPのアニメーション
+<img src="Image/HighSchool_2024/HPBar.png"><br>
+<img src="Image/HighSchool_2024/PlayerHit_0.png"><br>
+
+## プレイヤーの無敵時間
+<img src="Image/HighSchool_2024/PlayerHit_1.png"><br>
+
+## プレイヤーの明滅
+<img src="Image/HighSchool_2024/PlayerColor.png"><br>
+<img src="Image/HighSchool_2024/PlayerHit_2.png"><br>
+
+## ヒットストップ
+<img src="Image/HighSchool_2024/HitStop.png"><br>
+<img src="Image/HighSchool_2024/PlayerHit_3.png"><br>
+
+## カメラ揺れ
+<img src="Image/HighSchool_2024/CamShake.png"><br>
+<img src="Image/HighSchool_2024/PlayerHit_4.png"><br>
