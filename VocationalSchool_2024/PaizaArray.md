@@ -179,7 +179,7 @@ class Program
 
 ### Where
 UnityでLinqを使うときは、WhereとOrderByを使うことが多いです。<br>
-SelectはListの中から、特定の要素を含んだものだけに変更するときに使います。<br>
+WhereはListの中から、特定の要素を含んだものだけに変更するときに使います。<br>
 <img src="Image/VocationalSchool_2024/MonstSort.png"><br>
 
 ### OrderBy
