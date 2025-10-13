@@ -139,3 +139,50 @@ class Program
 	}
 }
 ~~~
+
+## ゲーム製作でよく使われるLinq
+### 自作クラスでのリスト
+ゲーム製作でリストを使うときは自分で作ったクラスをリストにすることが多いです。<br>
+例：エネミーリスト、オブジェクトリスト、アイテムポーチ、、、<br>ItemPortch
+<img src="Image/VocationalSchool_2024/ItemPortch.png"><br>
+
+~~~ clike
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+class Enemy
+{
+	int hp;
+	int atk;
+	int def;
+}
+
+class Program
+{
+	static void Main()
+	{
+		List<Enemy> enemies = new ();
+		// 割愛
+
+		// まだ生きてるやつに限定
+		enemies = enemies.Select(n => n.hp > 0).ToList();
+
+		//　Hp順でソート
+		enemies = enemies.OrderBy(n => n.hp).ToList();
+
+		// Hpが一番低い敵に攻撃
+		Attack( enemies[^1] );
+	}
+}
+~~~
+
+### Select
+UnityでLinqを使うときは、SelectとOrderByを使うことが多いです。<br>
+SelectはListの中から、特定の要素を含んだものだけに変更するときに使います。<br>
+<img src="Image/VocationalSchool_2024/MonstSort.png"><br>
+
+### OrderBy
+OrderByはリストの特定の要素で昇順に並べます。（小さいものからだんだん大きくなる）<br>
+クラス内に含まれている変数なら何でもソートの対象にできますが、<br>
+Hpでソート後同じやつはAtkでソートしてさらに同じなら、defでソートみたいなこともできます。<br>
