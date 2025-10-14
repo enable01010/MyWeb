@@ -429,3 +429,9 @@ AnimatorController（四角い方）をダブルクリックしてください�
 <img src="Image/HighSchool_2024/AnimationClipActive2.png"><br>
 
 あとは気合で場所と、有効にする時間を調整します。<br>
+
+完成したらプレハブにしてシーンから削除します。
+<img src="Image/HighSchool_2024/AttackPatternPref.png"><br>
+
+## プレハブを再生するプログラムの作成
+<img src="Image/HighSchool_2024/EnemyAttackManager2.png"><br>
