@@ -38,13 +38,13 @@
         transition: transform 0.2s, box-shadow 0.2s;
         margin-bottom: 2rem;
       ">
-        <img src="Image/HighSchool_2023/VectorTitle.png" alt="復習画像" style="width: 100%; display: block;" />
+        <img src="Image/HighSchool_2024/VectorTitle.png" alt="復習画像" style="width: 100%; display: block;" />
         <div style="padding: 1rem;">
           <h3 style="margin-top: 0;">ベクトル</h3>
           <p style="font-size: 0.9rem; color: #333; line-height: 1.5;">
             ベクトルを使ってゲーム製作を行います。
           </p>
-          <a href="#/HighSchool_2024/VectorGame.md" style="
+          <a href="#/HighSchool_2023/VectorGame.md" style="
             display: inline-block;
             background-color: #2b8be6;
             color: white;
