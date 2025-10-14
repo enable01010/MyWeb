@@ -93,6 +93,27 @@ Create→UI→Sliderでオブジェクトを生成して、写真の内容にイ
 ## 玉の移動方向にバリエーションをつける
 弾の処理を参考に、シリアライズフィールドの方向に発射する玉を作ってみましょう。<br>
 
+##　便利なコードの書き方コルーチン
+途中で処理を中断して、指定の秒数待ったりすることができる書き方<br>
+並列処理といわれたりしますが、Unityでは別に並列処理ではないです。<br>
+<br>
+画像
+<br>
+コルーチンはこのように書きます。<br>
+見たことないyield return 〇〇〇があると思います。<br>
+これは　『〇〇の部分まで待つ』という処理になります。<br>
+<br>
+<div style="border-left: 5px solid #2d9cdb; background: #e8f4fd; padding: 0.8em; margin: 1em 0;">
+  <strong>💡 使用例：</strong><br>
+yield return null;　→　1フレーム待つ<br>
+yield return new WaitForSeconds(1.0f); →　1秒待つ<br>
+yield reutrn StartCoroutine(コルーチン関数（）); →　引数のコルーチンが終わるのを待つ<br>
+</div>
+
+この〇〇を待つ機能を多用します。<br>
+他にもn秒かけて何か処理をする際などにコルーチンを使うと便利だったりします。<br>
+
+
 ## 玉の発射を制御するスクリプトを作成する
 <img src="Image/HighSchool_2024/VectorDirAttack_0.png"><br>
 <img src="Image/HighSchool_2024/VectorDirAttack_1.png"><br>
