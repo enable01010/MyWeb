@@ -27,7 +27,6 @@
         ">詳細を見る</a>
       </div>
     </div>
-
     <div style="
       max-width: 360px;
       background-color: white;
@@ -55,7 +54,6 @@
         ">詳細を見る</a>
       </div>
     </div>
-
     <div style="
       max-width: 360px;
       background-color: white;
@@ -72,7 +70,7 @@
           パイザの問題を通して、プログラムの整理方法やその考え方について学びます。<br>
           Unityにおいても大切な考えになるので、日常的に意識していきましょう。
         </p>
-        <a href="#/VocationalSchool_2024/PaizaRefact.md" style="
+        <a href="#/VocationalSchool_2024/PaizzaRefact.md" style="
           display: inline-block;
           background-color: #2b8be6;
           color: white;
