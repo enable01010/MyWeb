@@ -17,7 +17,7 @@ private void Awake()
 }
 
 // Move()コルーチンの実部
-private IEnumrator Move()
+private IEnumerator Move()
 {
 	yield return null;
 
@@ -33,9 +33,9 @@ private IEnumrator Move()
 
 <div style="border-left: 5px solid #2d9cdb; background: #e8f4fd; padding: 0.8em; margin: 1em 0;">
   <strong>💡 補足：</strong><br>
-  yield return null; →　１フレーム待つ
-  yield return new WaitForSeconds(1.0f);　→　1秒待つ
-  yield return StartCorutine(Move());　→　Move()コルーチンが終わるまで待つ
+  yield return null; →　１フレーム待つ<br>
+  yield return new WaitForSeconds(1.0f);　→　1秒待つ<br>
+  yield return StartCorutine(Move());　→　Move()コルーチンが終わるまで待つ<br>
 </div>
 
 <br>
@@ -44,24 +44,27 @@ private IEnumrator Move()
 
 ~~~ clike
 
-private IEnumrator SceneLoadRoutine()
+///
+///　シーンの切り替えの統括ルーチン
+///
+private IEnumerator SceneLoadRoutine()
 {
 	yield return StartCorutine(FadeOut());
 	yield return StartCorutine(LoadScene());
-	yield reutrn StartCorutine(FadeIn());
+	yield return StartCorutine(FadeIn());
 }
 
-private IEnumrator FadeOut()
+private IEnumerator FadeOut()
 {
 	// フェードアウトする処理（割愛）
 }
 
-private IEnumrator LoadScene()
+private IEnumerator LoadScene()
 {
 	// シーンをロードする処理（割愛）
 }
 
-private IEnumrator FadeIn()
+private IEnumerator FadeIn()
 {
 	// フェードインする処理（割愛）
 }
@@ -124,7 +127,7 @@ public class ArrowMove
 		StartRoutine(Move()):
 	}
 
-	private IEnumrator Move()
+	private IEnumerator Move()
 	{
 		// 移動処理（割愛）
 	}
@@ -171,7 +174,7 @@ Unityで最も目にするのはButtonです。ボタンのコンポーネント
 
 <div style="border-left: 5px solid #e67e22; background: #fff3e0; padding: 0.8em; margin: 1em 0;">
   <strong>⚠️ 警告：</strong><br>
-  稀に、アクセスの簡易化にシングルトンにしているプログラムを見かけますが、基本NG行動です。<br>
+  稀に、アクセスの簡易化のためにシングルトンにしているプログラムを見かけますが、基本NG行動です。<br>
   簡単すぎるアクセスはバグのもとになる事が多く、現場での開発では使えません。もちろん就活でも<br>
   一つである事を確約する目的のパターンであることを忘れないようにしましょう。<br>
 </div>
@@ -387,8 +390,7 @@ public class RhythmMaker : MonoBehaviour
 僕のプログラムは、単一責任にかなり比重を高く考えています。（説明しやすいから）<br>
 プログラムを極端に軽量化、統一化したい場合はできる限りRhythmManagerに書くこともあるかもしれません。<br>
 <br>
-これは個人的な考えですが、学生制作や個人制作では、１ページで収まるぐらいのクラス、関数にしたほうが<br>
-いいと思います。<br>
+これは個人的な考えですが、学生制作や個人制作では、１ページで収まるぐらいのクラス、関数にしたほうがいいと思います。<br>
 
 ## リズムの受取
 リズムの受取は概ねコライダーを使っています。<br>
