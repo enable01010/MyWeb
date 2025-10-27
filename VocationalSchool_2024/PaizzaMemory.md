@@ -108,11 +108,11 @@ Enumをビット演算で組み合わせることで、boolの集合体として
 enum StateType : short
 {
     Sleep =     0b00000001,     // 睡眠
-    Burn =      0b00000010,      // 火傷
-    Paralysis = 0b00000100, // 麻痺
+    Burn =      0b00000010,     // 火傷
+    Paralysis = 0b00000100,     // 麻痺
     Chaos =     0b00001000,     // 混乱
-    Poison =    0b00010000,    // 毒 
-    Frozen =    0b00100000,    // 氷
+    Poison =    0b00010000,     // 毒 
+    Frozen =    0b00100000,     // 氷
     Death =     0b01000000,     // ひん死
 }
 ~~~
