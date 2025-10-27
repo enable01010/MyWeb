@@ -21,7 +21,7 @@
 
 ### シフト演算
 シフト演算はビットを左右にずらす演算です<br>
-~~~csharp
+~~~clike
 int num = 1; // 0000 0001
 num = num << 1; // 左に1ビットシフト 0000 0010 (2進数) → 2 (10進数)
 num = num << 2; // 左に2ビットシフト 0000 1000 (2進数) → 8 (10進数)
@@ -30,7 +30,7 @@ num = num >> 1; // 右に1ビットシフト 0000 0100 (2進数) → 4 (10進数
 
 ### 論理和
 論理和はビットごとにOR演算を行います<br>
-~~~csharp
+~~~clike
 int a = 0b_1100; // 12 (10進数)
 int b = 0b_1010; // 10 (10進数)
 int result = a | b; // 論理和 0b_1110 (2進数) → 14 (10進数)
@@ -39,7 +39,7 @@ int result = a | b; // 論理和 0b_1110 (2進数) → 14 (10進数)
 ### 論理積
 
 論理積はビットごとにAND演算を行います<br>
-~~~csharp
+~~~clike
 int a = 0b_1100; // 12 (10進数)
 int b = 0b_1010; // 10 (10進数)
 result = a & b; // 論理積 0b_1000 (2進数) → 8 (10進数)
@@ -48,7 +48,7 @@ result = a & b; // 論理積 0b_1000 (2進数) → 8 (10進数)
 
 ### 排他的論理和
 排他的論理和はビットごとにXOR演算を行います<br>
-~~~csharp
+~~~clike
 int a = 0b_1100; // 12 (10進数)
 int b = 0b_1010; // 10 (10進数)
 int result = a ^ b; // 排他的論理和 0b_0110 (2進数) → 6 (10進数)
@@ -77,7 +77,7 @@ int result = a ^ b; // 排他的論理和 0b_0110 (2進数) → 6 (10進数)
 ## よく使うメモリの省エネ(Enum)
 ### Enumの事前知識
 まずEnumはバイト数を指定できる<br>
-~~~csharp
+~~~clike
 enum EnemyType : byte
 {
     sample1,
@@ -85,7 +85,7 @@ enum EnemyType : byte
 }
 ~~~
 Enumはビット演算で組み合わせが可能<br>
-~~~csharp
+~~~clike
 enum EnemyType : byte
 {
     Sample1 = 1 << 0, // 1
@@ -104,7 +104,7 @@ enum EnemyType2 : byte
 ~~~
 ### Enumをboolの集合体としてつかう
 Enumをビット演算で組み合わせることで、boolの集合体として使うことが出来る<br>
-~~~csharp
+~~~clike
 enum StateType : short
 {
     Sleep =     0b00000001,     // 睡眠
@@ -120,7 +120,7 @@ boolを7個使うと7バイト必要だが、Enumを使うと2バイトで済む
         
 ### 論理積で出来る状態確認
 
-~~~csharp
+~~~clike
 [Flags]
 enum StateType : short
 {
@@ -162,7 +162,7 @@ void main()
 
 ### 排他的論理和の使い道
 複数の状態が同時に発生しない場合、XORを使うことで条件分岐を簡潔にできる<br>
-~~~csharp
+~~~clike
 void main()
 {
     if(Input.GetKey(KeyCode.LeftArrow) ^ Input.GetKey(KeyCode.RightArrow))
@@ -174,7 +174,7 @@ void main()
 
 値の入れ替えにも使える<br>
 一応、一般的なやり方より仮置きの変数がないためメモリ使用量が少ない<br>
-~~~csharp
+~~~clike
 void main()
 {
     int a = 5;
@@ -191,7 +191,7 @@ void main()
 int型をビット演算で分割して複数の数値として使うことが出来る<br>
 特に、0～255までの数値を複数保存したい場合に有効<br>
 UnityのColorを同じようにしてみると、、、<br>
-~~~csharp
+~~~clike
 void main()
 {
     int color = 0;
@@ -226,7 +226,7 @@ if(num > 5) と　if(num > 0) と　if(num != 0) の速度差<br>
 左から順に遅い<br>
 
 これを踏まえた上でfor文の処理は、、、<br>
-~~~ csharp
+~~~ clike
 void main()
 {
     for(int i = 0; i < 100; i++) // 普通のやり方
