@@ -76,6 +76,19 @@ private IEnumerator FadeIn()
 →シーンのロードが完了したらフェードイン<br>
 みたいな順番を守ったコードを書くことができます。<br>
 
+### 実際に簡単なコルーチンを書いてみよう
+コルーチンで毎フレームデバックログを出すCorutineTest.csを作って見ましょう。
+<img src="Image/RhythmGame/DebugLog.png"><br>DebugLog2.png
+
+スタートから１秒後にログをだすCorutineTest2.csを作って見ましょう。
+<img src="Image/RhythmGame/DebugLog2.png"><br>
+
+Enterキーを押してから1秒後にログを出すCorutineTest3.csを作って見ましょう。
+<img src="Image/RhythmGame/DebugLog3.png"><br>
+
+Enterキーを押してから1秒後にログを出して、さらに１秒後にログを出すCorutineTest4.csを作って見ましょう。
+<img src="Image/RhythmGame/DebugLog3.png"><br>
+
 ## アクション・ファンクション
 Action（アクション）・Function（ファンクション）は関数を変数にいれるようなイメージです。<br>
 例えば<br>
@@ -132,7 +145,6 @@ public class ArrowMove
 		// 移動処理（割愛）
 	}
 }
-
 
 ~~~
 
