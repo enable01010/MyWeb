@@ -175,7 +175,7 @@
       transition: transform 0.2s, box-shadow 0.2s;
       margin-bottom: 2rem;
     ">
-      <img src="Image/HighSchool_2024/VectorTitle.png" alt="復習画像" style="width: 100%; display: block;" />
+      <img src="Image/RhythmGame/RhythmTitle.png" alt="復習画像" style="width: 100%; display: block;" />
       <div style="padding: 1rem;">
         <h3 style="margin-top: 0;">プロジェクトとプログラムの読み取り</h3>
         <p style="font-size: 0.9rem; color: #333; line-height: 1.5;">
