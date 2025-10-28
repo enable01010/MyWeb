@@ -87,7 +87,7 @@ Enterキーを押してから1秒後にログを出すCorutineTest3.csを作っ�
 <img src="Image/RhythmGame/DebugLog3.png"><br>
 
 Enterキーを押してから1秒後にログを出して、さらに１秒後にログを出すCorutineTest4.csを作って見ましょう。
-<img src="Image/RhythmGame/DebugLog3.png"><br>
+<img src="Image/RhythmGame/DebugLog4.png"><br>
 
 ## アクション・ファンクション
 Action（アクション）・Function（ファンクション）は関数を変数にいれるようなイメージです。<br>
