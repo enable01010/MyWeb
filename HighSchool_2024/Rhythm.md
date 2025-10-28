@@ -78,7 +78,7 @@ private IEnumerator FadeIn()
 
 ### 実際に簡単なコルーチンを書いてみよう
 コルーチンで毎フレームデバックログを出すCorutineTest.csを作って見ましょう。
-<img src="Image/RhythmGame/DebugLog.png"><br>DebugLog2.png
+<img src="Image/RhythmGame/DenugLog.png"><br>
 
 スタートから１秒後にログをだすCorutineTest2.csを作って見ましょう。
 <img src="Image/RhythmGame/DebugLog2.png"><br>
