@@ -19,7 +19,11 @@ Unity6000　Universal2D　PhotonNet　というプロジェクトを立ち上げ
 
 # データのダウンロード
 ギガファイル便にて本日使う資料のアップロードしましたので下記のリンクからダウンロードして下さい。<br>
-https://44.gigafile.nu/1116-b091b2ac1ef910c0f466e9c0313b065e5
+https://44.gigafile.nu/1116-b091b2ac1ef910c0f466e9c0313b065e5 <br>
+
+ダウンロードとプロジェクトの立ち上げが完了したら、<br>
+ダウンロードしたフォルダーを解凍して、プロジェクトの中にいれてください。<br>
+そして、いつもの如くTextMeshProのインポートとSceneの登録をしてください。<br>
 
 # ネットワークにおける大切な考え方
 ネットワークでゲームを作るうえで大切になる考え方が３つあります<br>
@@ -31,7 +35,8 @@ https://44.gigafile.nu/1116-b091b2ac1ef910c0f466e9c0313b065e5
 一番簡単なのは、部屋を作る事です。<br>
 一人が部屋を作り、それ以外の人がその部屋に集合するのがPhotonでは簡単だと思います。<br>
 下記のスクリプトを作成してください。<br>
-※　nameTableは面倒臭いだけなので下にコピー用があります。<br>TitleManager
+※　nameTableは面倒臭いだけなので下にコピー用があります。<br>
+TitleManager<br>
 <img src="Image/Photon/TitleManager1.png"><br>
 <img src="Image/Photon/TitleManager2.png"><br>
 <img src="Image/Photon/TitleManager3.png"><br>
