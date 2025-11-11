@@ -75,8 +75,8 @@ readonly string[] nameTable = new string[]
 同期しているオブジェクトを作成するにはいつもとは違う方法で作成する必要があります。<br>
 下記のスクリプトを作成して、MainSceneのMainManagerにアタッチしてください。<br>
 
-<img src="Image/Photon/MainManager1.png"><br>
 <img src="Image/Photon/MainManager2.png"><br>
+<img src="Image/Photon/MainManager1.png"><br>
 
 # Photonにおける同期のやり方
 TestSceneにプレイヤーのプレハブがいっぱい置いてあると思います。<br>
