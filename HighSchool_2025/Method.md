@@ -1,59 +1,59 @@
-# �{���̎��Ɠ��e
+﻿# 本日の授業内容
 
-�{���͍��w���߂̎��ƂɂȂ�܂��B<br>
+本日は座学強めの授業になります。<br>
 <br>
-Unity�Ŏg����֐��ɂ��Ă̎��Ƃł��B<br>
-�{���́A�Ȃɂ��̃Q�[�������Ƃ�����肩�́A<br>
-Unity�̃v���O�����ł���Ȏ��ł����`�݂����Ȃ��̂̏Љ�ɂȂ�܂��B<br>
+Unityで使える関数についての授業です。<br>
+本日は、なにかのゲームを作るというよりかは、<br>
+Unityのプログラムでこんな事できるよ～みたいなものの紹介になります。<br>
 <br>
-�����̐���̍ۂɁA����ȋ@�\�������ȁ`�Ǝv���o���āA<br>
-���ׂĎg����悤�ɂȂ邱�Ƃ�ڎw���܂��傤�B<br>
+自分の制作の際に、こんな機能あったな～と思い出して、<br>
+調べて使えるようになることを目指しましょう。<br>
 <br>
-# �v���W�F�N�g�����グ
-Unity6�@Univarsal 3D �v���W�F�N�g���@MethodTest�ō쐬<br>
+# プロジェクト立ち上げ
+Unity6　Univarsal 3D プロジェクト名　MethodTestで作成<br>
 
-# �ėp�I�ȃv���O�����̏Љ�
+# 汎用的なプログラムの紹介
 
-## ��MonoBehaviour ���C�t�T�C�N���E�R�[���o�b�N��
+## ＜MonoBehaviour ライフサイクル・コールバック＞
 
-Awake()�@//�@�I�u�W�F�N�g���ł��Ă���<br>
-Start()�@//�@Awake�̌�<br>
+Awake()　//　オブジェクトができてすぐ<br>
+Start()　//　Awakeの後<br>
 <br>
-Update()�@//�@���t���[��<br>
-LateUpdate()�@//�@Update�̒���<br>
-FixedUpdate()�@//�@�ݒ肵���b���Ɉ��i�ʏ��0.02�b�j<br>
+Update()　//　毎フレーム<br>
+LateUpdate()　//　Updateの直後<br>
+FixedUpdate()　//　設定した秒数に一回（通常は0.02秒）<br>
 <br>
-OnEnable()�@//�@SetActive�Ő؂�ւ����Ƃ��j<br>
-OnDestroy()�@//�@�I�u�W�F�N�g���j������钼�O<br>
+OnEnable()　//　SetActiveで切り替えたとき）<br>
+OnDestroy()　//　オブジェクトが破棄される直前<br>
 
 
-## ��Transform �֌W��
-transform.position�@//��΍��W<br>
-transform.localPosition�@//���΍��W<br>
-transform.rotation�@//��Ή�]Quortaion<br>
-transform.localRotation�@//���Ή�]Quortaion<br>
-transform.eulerAngles�@//���Ή�]Vector3<br>
-transform.localScale�@//�傫��<br>
+## ＜Transform 関係＞
+transform.position　//絶対座標<br>
+transform.localPosition　//相対座標<br>
+transform.rotation　//絶対回転Quortaion<br>
+transform.localRotation　//相対回転Quortaion<br>
+transform.eulerAngles　//相対回転Vector3<br>
+transform.localScale　//大きさ<br>
 <br>
-transform.LookAt(Transfrom)�@// ����̕�����������<br>
+transform.LookAt(Transfrom)　// 特定の方向を向ける<br>
 
-## ��GameObject �֌W��
-gameObject.SetActive(bool)�@//�I�u�W�F�N�g�̗L��������؂�ւ���<br>
-gameObject.activeSelf�@//���݃I�u�W�F�N�g���L�������������肷��<br>
+## ＜GameObject 関係＞
+gameObject.SetActive(bool)　//オブジェクトの有効無効を切り替える<br>
+gameObject.activeSelf　//現在オブジェクトが有効か無効か判定する<br>
 <br>
-GetComponent<T>()�@//����̃R���|�[�l���g���擾����<br>
-AddComponent<T>()�@//����̃R���|�[�l���g��ǉ�����<br>
-GetComponentInChildren<T>() //�q�I�u�W�F�N�g�̒��̓���̃R���|�[�l���g���擾����<br>
-GetComponentInParent<T>() //�e�I�u�W�F�N�g�̒��̓���̃R���|�[�l���g���擾����<br>
+GetComponent<T>()　//特定のコンポーネントを取得する<br>
+AddComponent<T>()　//特定のコンポーネントを追加する<br>
+GetComponentInChildren<T>() //子オブジェクトの中の特定のコンポーネントを取得する<br>
+GetComponentInParent<T>() //親オブジェクトの中の特定のコンポーネントを取得する<br>
 <br>
-Destroy(Object)�@//�I�u�W�F�N�g��j������<br>
-Instantiate(Object)�@//�I�u�W�F�N�g�𐶐�����<br>
+Destroy(Object)　//オブジェクトを破棄する<br>
+Instantiate(Object)　//オブジェクトを生成する<br>
 
-#�ėp�I�ȃv���O����������Ă��܂���
-�ėp�J�����@TPS
+#汎用的なプログラムを作ってしまおう
+汎用カメラ　TPS
 <img src="Image/HighSchool_2025/Method/TPSCamera1.png"><br>
 <img src="Image/HighSchool_2025/Method/TPSCamera2.png"><br>
 <img src="Image/HighSchool_2025/Method/TPSCamera3.png"><br>
 
-�ėp�J�����@FPS
-�ėp�L�����N�^�[�̈ړ��@
+汎用カメラ　FPS
+汎用キャラクターの移動　
