@@ -58,12 +58,11 @@ Instantiate(Object)　//オブジェクトを生成する<br>
 ## 汎用カメラ　FPS
 <img src="Image/HighSchool_2025/Method/FPSCamera.png"><br>
 
-<!--
 ## 汎用キャラクターの移動　TPS
-<img src="Image/HighSchool_2025/Method/FPSCamera.png"><br>
+<img src="Image/HighSchool_2025/Method/TPSPlayerMove1.png"><br>
+<img src="Image/HighSchool_2025/Method/TPSPlayerMove2.png"><br>
+<img src="Image/HighSchool_2025/Method/TPSPlayerMove3.png"><br>
 
 ## 汎用キャラクターの移動　FPS
 <img src="Image/HighSchool_2025/Method/FPSPlayerMove1.png"><br>
 <img src="Image/HighSchool_2025/Method/FPSPlayerMove2.png"><br>
-
--->
