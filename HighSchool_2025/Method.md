@@ -49,11 +49,21 @@ GetComponentInParent<T>() //親オブジェクトの中の特定のコンポー�
 Destroy(Object)　//オブジェクトを破棄する<br>
 Instantiate(Object)　//オブジェクトを生成する<br>
 
-#汎用的なプログラムを作ってしまおう
-汎用カメラ　TPS
+# 汎用的なプログラムを作ってしまおう
+## 汎用カメラ　TPS
 <img src="Image/HighSchool_2025/Method/TPSCamera1.png"><br>
 <img src="Image/HighSchool_2025/Method/TPSCamera2.png"><br>
 <img src="Image/HighSchool_2025/Method/TPSCamera3.png"><br>
 
-汎用カメラ　FPS
-汎用キャラクターの移動　
+## 汎用カメラ　FPS
+<img src="Image/HighSchool_2025/Method/FPSCamera.png"><br>
+
+<!--
+## 汎用キャラクターの移動　TPS
+<img src="Image/HighSchool_2025/Method/FPSCamera.png"><br>
+
+## 汎用キャラクターの移動　FPS
+<img src="Image/HighSchool_2025/Method/FPSPlayerMove1.png"><br>
+<img src="Image/HighSchool_2025/Method/FPSPlayerMove2.png"><br>
+
+-->
