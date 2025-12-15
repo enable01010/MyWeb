@@ -1,4 +1,4 @@
-# 授業目的
+﻿# 授業目的
 みなさんが書いたプログラムをみると、<br>
 main()の中に上から順番にずらっとコードが並んでいる事が多いです。<br>
 
@@ -13,8 +13,6 @@ main()の中に上から順番にずらっとコードが並んでいる事が�
 
 
 # コードの使いまわし
-前回の最後に解いていた問題を例に解説します。<br>
-難しい問題なので、解き方を理解するのではなく、考えかたを身に着けるよう事を目的にしてください。<br>
 
 皆さん、パイザ解いている時にVector2とか使いたくなりませんか？<br>
 ２次元配列の座標を扱う時にint x,y;みないなコード書いてませんか？<br>
@@ -22,7 +20,36 @@ main()の中に上から順番にずらっとコードが並んでいる事が�
 こういう物は先にクラスとして作って置いて、パイザ開始時にコピペして使うと楽です<br>
 例えば、こんな感じでVector2クラスを作っておきます。<br>
 ~~~ clike
+/// <summary>
+    /// パイザ用コピペVector2（int）
+    /// </summary>
+    public class Vector2
+    {
+        static public readonly Vector2 zero = new Vector2(0, 0);
+        static public readonly Vector2 right = new Vector2(1, 0);
+        static public readonly Vector2 left = new Vector2(-1, 0);
+        static public readonly Vector2 up = new Vector2(0, 1);
+        static public readonly Vector2 down = new Vector2(0, -1);
 
+        public int x;
+        public int y;
+
+        public Vector2(int x, int y)
+        {
+            this.x = x;
+            this.y = y;
+        }
+
+        public static Vector2 operator +(Vector2 a, Vector2 b)
+        {
+            return new Vector2(a.x + b.x, a.y + b.y);
+        }
+        
+        public static Vector2 operator -(Vector2 a, Vector2 b)
+        {
+            return new Vector2(a.x - b.x, a.y - b.y);
+        }
+    }
 ~~~
 
 
@@ -70,5 +97,5 @@ public class Manager
 }
 ~~~
 そのうえで、僕は入力受け取り→出力→処理の順でコードを書く場合が多いです。<br>
-この順番でやると、処理を書く際にどんなデータを元に、何に変換したらイイかが明確になるからです。<br>
+この順番でやると、処理を書く際にどんなデータを元に、何に変換したら良いかが明確になるからです。<br>
 
