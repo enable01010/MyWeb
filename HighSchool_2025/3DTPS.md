@@ -95,6 +95,8 @@ Shooter.csを下記のように変更してください。<br>
 <img src="Image/3DTPS/ShooterAuto1.png"><br>
 <img src="Image/3DTPS/ShooterAuto2.png"><br>
 <img src="Image/3DTPS/ShooterAuto3.png"><br>
+カメラのとこにも修正にも追加をします。<br>
+<img src="Image/3DTPS/CameraShoot.png"><br>
 <br>
 3連タップ<br>
 <img src="Image/3DTPS/ShooterTap0.png"><br>
@@ -103,9 +105,12 @@ Shooter.csを下記のように変更してください。<br>
 <img src="Image/3DTPS/ShooterTap3.png"><br>
 <img src="Image/3DTPS/ShooterTap4.png"><br>
 
-
-
 <!--
+
+
+# エイムの作成
+右クリックを押してる間にエイムをするような処理を作成していきましょう。
+
 
 # 攻撃方法の変更
 　連射<br>
