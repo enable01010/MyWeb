@@ -37,8 +37,10 @@
 弾の作成（Unity操作）<br>
 1. 空オブジェクトを生成して名前をBulletにする<br>
 2. その中に、3D→Sphereを生成して名前をViewにする<br>
-3. BulletにBulletスクリプトをアタッチする<br>
-4. Bulletオブジェクトをプレハブにする<br>
+3. ViewのコライダーのIsTriggerをOnにする<br>
+4. BulletにBulletスクリプトをアタッチする<br>
+5. Bulletオブジェクトをプレハブにする<br>
+6. Bulletオブジェクトを削除する<br>
 <img src="Image/3DTPS/BulletView0.png"><br>
 <img src="Image/3DTPS/BulletView1.png"><br>
 <br>
@@ -53,5 +55,33 @@
 2. Playerの中に空オブジェクトを作成し名前をBulletStartPosにする<br>
 3. BulletStartPosの場所をx0,y0.5,z1にする<br>
 4. PlayerのTPSShooterのBulletStartPosに上のやつをシリアライズする<br>
-1. <img src="Image/3DTPS/ShooterView0.png"><br>
+5. PlyaerのBulletPrefに先ほどプレハブにしたBulletを入れる<br>
+<img src="Image/3DTPS/ShooterView0.png"><br>
 <img src="Image/3DTPS/ShooterView1.png"><br>
+
+<!--
+
+# 敵のダメージ処理を作成
+　当たり判定<br>
+　HPの表示<br>
+　死ぬ<br>
+
+# 攻撃方法の変更
+　連射<br>
+　エイム<br>
+
+# 敵の部位別のダメージ
+　キャラクターの実装<br>
+　プログラムの実装<br>
+
+# 弾の改善
+　フルオート<br>
+　セミオート<br>
+　反動<br>
+　移動エフェクト<br>
+　着弾エフェクト<br>
+　サウンド<br>
+　オブジェクトプール<br>
+　
+-->
+　
