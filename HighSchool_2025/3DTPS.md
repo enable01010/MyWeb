@@ -80,12 +80,32 @@ VectorGame等<br>
 <img src="Image/3DTPS/EnemyHitView0.png"><br>
 <img src="Image/3DTPS/EnemyHitView1.png"><br>
 
-<!--
 
-# 敵のダメージ処理を作成
-　当たり判定<br>
-　HPの表示<br>
-　死ぬ<br>
+# 射撃方法の変更
+一般的にシューター系のゲームでは射撃にクルールタイムがあることが多いと思います。<br>
+現状はクリックできたらマイフレーム打てるようになっているので、射撃にクールタイムを設けましょう。<br>
+Shooter.csを下記のように変更してください。<br>
+<img src="Image/3DTPS/Shooter2_0.png"><br>
+<img src="Image/3DTPS/Shooter2_1.png"><br>
+<img src="Image/3DTPS/Shooter2_2.png"><br>
+<br>
+他にも連射の銃や3連タップの銃など作成しましょう。<br>
+連射銃<br>
+<img src="Image/3DTPS/ShooterAuto0.png"><br>
+<img src="Image/3DTPS/ShooterAuto1.png"><br>
+<img src="Image/3DTPS/ShooterAuto2.png"><br>
+<img src="Image/3DTPS/ShooterAuto3.png"><br>
+<br>
+3連タップ<br>
+<img src="Image/3DTPS/ShooterTap0.png"><br>
+<img src="Image/3DTPS/ShooterTap1.png"><br>
+<img src="Image/3DTPS/ShooterTap2.png"><br>
+<img src="Image/3DTPS/ShooterTap3.png"><br>
+<img src="Image/3DTPS/ShooterTap4.png"><br>
+
+
+
+<!--
 
 # 攻撃方法の変更
 　連射<br>
@@ -96,13 +116,15 @@ VectorGame等<br>
 　プログラムの実装<br>
 
 # 弾の改善
-　フルオート<br>
-　セミオート<br>
 　反動<br>
 　移動エフェクト<br>
 　着弾エフェクト<br>
 　サウンド<br>
 　オブジェクトプール<br>
 　
+# エネミーの挙動
+# エネミーのポップ
+# オンライン化
+
 -->
 　
