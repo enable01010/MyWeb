@@ -59,6 +59,27 @@
 <img src="Image/3DTPS/ShooterView0.png"><br>
 <img src="Image/3DTPS/ShooterView1.png"><br>
 
+
+# 敵のダメージを受ける処理の作成
+まず、以前まで使っていたHPBar.csをこのプロジェクトに持ってきてください。<br>
+VectorGame等<br>
+その後下記スクリプトの作成をして下しさい<br>
+
+エネミーの作成(スクリプト)<br>
+<img src="Image/3DTPS/EnemyHit.png"><br>
+<br>
+エネミーの作成(Unity操作)<br>
+1. 空オブジェクトを生成して名前をEnemyにする<br>
+2. その中に、3D→Cubeを生成して名前をViewにする<br>
+3. EnemyにEnemyHitスクリプトをアタッチする<br>
+4. Enemyの中にUI→Canvasを作成する<br>
+5. CanvasのCanvasのRenderModeをWorldSpaceにする<br>
+6. Canvasの中に空のオブジェクトを作成して名前をHpBarにする
+7. 以前と同じような形でHPBarを作成する
+8. EnemyHitのHPBarに作成したHPBarをシリアライズする
+<img src="Image/3DTPS/EnemyHitView0.png"><br>
+<img src="Image/3DTPS/EnemyHitView1.png"><br>
+
 <!--
 
 # 敵のダメージ処理を作成
