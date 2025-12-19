@@ -15,8 +15,10 @@ Unity6 Universal3D プロジェクト名　3DTPS
 
 # キャラクターの動きの作成
 次にカメラの向きに合わせて動くようにプレイヤーの移動処理を作成しましょう。<br>
-<img src="Image/3DTPS/PlayerMove.png"><br>
-
+<img src="Image/3DTPS/PlayerMove2_0.png"><br>
+<img src="Image/3DTPS/PlayerMove2_1.png"><br>
+<img src="Image/3DTPS/PlayerMove2_2.png"><br>
+<img src="Image/3DTPS/PlayerMove2_3.png"><br>
 # 弾と、射撃の作成
 弾の作成(スクリプト)<br>
 <img src="Image/3DTPS/Bullet0.png"><br>
