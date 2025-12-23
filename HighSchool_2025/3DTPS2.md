@@ -15,7 +15,7 @@
 
 ## UIがプレイヤーの方を向くように修正(ビルボード)
 現状だとエネミー（仮）の横側に行くとHPバーが見えなくなるような状態なのでそれを修正しましょう。<br>
-<img src="Image/3DTPS/PlayerMove.png"><br>
+<img src="Image/3DTPS/BuilBord.png"><br>
 
 Unityでの操作<br>
 1.Enemyの子階層にあるHpBarにBuilbordをアタッチ<br>
