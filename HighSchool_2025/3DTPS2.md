@@ -41,6 +41,36 @@ Unityの操作<br>
 <img src="Image/3DTPS/SenshaMove0.png"><br>
 <img src="Image/3DTPS/SenshaMove1.png"><br>
 
+# エネミーの作成
+エネミーの作成をしていきます。<br>
+がAIの作成は難易度が高く、色々なやり方があるので、まずはのパーツ部分から作成していきます。<br>
+
+## エネミーの移動の作成
+※下記単体では動作しません。<br>
+<img src="Image/3DTPS/EnemyMove.png"><br>
+
+## エネミーの攻撃の作成
+※下記単体では動作しません。<br>
+<img src="Image/3DTPS/EnemyShoot0.png"><br>
+<img src="Image/3DTPS/EnemyShoot1.png"><br>
+
+## エネミーのAIの作成
+<img src="Image/3DTPS/EnemyAi0.png"><br>
+<img src="Image/3DTPS/EnemyAi1.png"><br>
+<img src="Image/3DTPS/EnemyAi2.png"><br>
+<img src="Image/3DTPS/EnemyAi3.png"><br>
+<img src="Image/3DTPS/EnemyAi4.png"><br>
+<img src="Image/3DTPS/EnemyAi5.png"><br>
+
+## エネミーの作成（Unity）
+1.　シーン上のEnemyのViewを削除<br>
+2.　Enemyの中にPrefab/Demo_Tankをいれてください。<br>
+3.　空オブジェクトを作成して、名前をBulletStartPosにしてください。<br>
+4.　BulletStartPosをTankTurretの子階層に入れてください<br>
+5.　EnemyにEnemyMove,EnemyShoot,EnemyAiをアタッチしてください。<br>
+6.　EnemyShootのBulletPrefにPrefab/Bulletを入れてください<br>
+
+
 <!--
 
 # エネミーの処理の作成
