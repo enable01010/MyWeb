@@ -346,7 +346,7 @@
         <p style="font-size: 0.9rem; color: #333; line-height: 1.5;">
           今回は前回の処理の修正と、エネミーの作成を行って行きましょう。
         </p>
-        <a href="#/HighSchool_2025/3DTPS.md" style="
+        <a href="#/HighSchool_2025/3DTPS2.md" style="
           display: inline-block;
           background-color: #2b8be6;
           color: white;
