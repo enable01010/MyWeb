@@ -41,6 +41,10 @@ Unityの操作<br>
 <img src="Image/3DTPS/SenshaMove0.png"><br>
 <img src="Image/3DTPS/SenshaMove1.png"><br>
 
+## プレイヤーの挙動の変更2
+カメラのX軸を動かす場合<br>
+<img src="Image/3DTPS/SenshaMove1_0.png"><br>
+
 # エネミーの作成
 エネミーの作成をしていきます。<br>
 がAIの作成は難易度が高く、色々なやり方があるので、まずはのパーツ部分から作成していきます。<br>
