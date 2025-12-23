@@ -3,7 +3,7 @@
 前回のプログラムだとリコイルの際に、カメラが一瞬で飛ぶので<br>
 動きがカクカクしていて酔いやすいものだったと思います。<br>
 なので、リコイルの制御を滑らかなものにしましょう。<br>
-<img src="Image/3DTPS/CameraRicoileCor"><br>
+<img src="Image/3DTPS/CameraRicoileCor.png"><br>
 
 ## エイムの作成
 カメラのエイムを作成していきましょう。<br>
