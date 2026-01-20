@@ -61,6 +61,33 @@ EnemyのEnemyPatrolのシリアライズに作成した子オブジェクトを�
 <img src="Image/3DTPS/LostMove8.png"><br>
 <img src="Image/3DTPS/LostMove9.png"><br>
 
+# プレイヤー側にあたり判定をつける
+Publicの谷山講師/1_20にエフェクトがあるのでそれをダウンロドしてください。<br>_
+
+<img src="Image/3DTPS/PlayerHit0.png"><br>
+<img src="Image/3DTPS/PlayerHit1.png"><br>
+
+fxにはプレハブの2番を登録してください。<br>
+
+# 敵にもがあたったときにFxを発生させる
+<img src="Image/3DTPS/PlayerHit0.png"><br>
+<img src="Image/3DTPS/PlayerHit1.png"><br>
+
+fxにはプレハブの2番を登録してください。<br>
+
+# 玉を打つ時にFxをつける
+<img src="Image/3DTPS/ShooterFx0.png"><br>
+<img src="Image/3DTPS/ShooterFx1.png"><br>
+
+fxにはプレハブの1番を登録してください。<br>
+
+# 敵が攻撃を受けた時にそっちに向かって来るようにする
+BulletHit
+<img src="Image/3DTPS/BulletHitAi0.png"><br>
+EnemyAi
+<img src="Image/3DTPS/EnemyAiHit0.png"><br>
+<img src="Image/3DTPS/BulletAi0.png"><br>
+
 
 <!--
 
