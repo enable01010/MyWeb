@@ -70,8 +70,8 @@ Publicの谷山講師/1_20にエフェクトがあるのでそれをダウンロ
 fxにはプレハブの2番を登録してください。<br>
 
 # 敵にもがあたったときにFxを発生させる
-<img src="Image/3DTPS/PlayerHit0.png"><br>
-<img src="Image/3DTPS/PlayerHit1.png"><br>
+<img src="Image/3DTPS/EnemyHit0.png"><br>
+<img src="Image/3DTPS/EnemyHit1.png"><br>
 
 fxにはプレハブの2番を登録してください。<br>
 
