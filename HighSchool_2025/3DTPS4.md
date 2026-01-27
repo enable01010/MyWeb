@@ -54,10 +54,24 @@ TemporaryInvincibilityにGoalをアタッチする<br>
 # 音をつける
 玉を撃った時や敵を倒した際に音がなるようにしましょう。<br>
 SoundManager.csを作成してください。<br>
+<img src="Image/3DTPS/SoundManager0.png"><br>
 <img src="Image/3DTPS/SoundManager1.png"><br>
-<img src="Image/3DTPS/SoundManager2.png"><br>
 音を鳴らす側にも修正を入れます。<br>
 EnemyAi.cs
 <img src="Image/3DTPS/EnemyAi_Sound.png"><br>
 TPSShooterTap.cs
 <img src="Image/3DTPS/TPSShooterTap_Sound.png"><br>
+
+Unityの作業<br>
+Publicの1_27フォルダーにサウンドがあるのでダウンロード<br>
+空のオブジェクトを生成して、名前をSoundManagerにする<br>
+空のオブジェクトにSoundManagerをアタッチする<br>
+空のオブジェクトにAudoSorceをアタッチする<br>
+SoundManagerにダウンロードしたサウンドをシリアライズする<br>
+SoundManagerにAudioSorceをアタッチする<br>
+
+# サウンドが重複して再生されない問題を解決する
+現在のサウンドマネージャーの設定だとサウンドが<br>
+一つしか再生できないようになっています。<br>
+複数のSEが同時に再生できるようにしましょう。<br>
+
