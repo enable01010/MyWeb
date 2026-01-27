@@ -65,10 +65,10 @@ TPSShooterTap.cs
 Unityの作業<br>
 Publicの1_27フォルダーにサウンドがあるのでダウンロード<br>
 空のオブジェクトを生成して、名前をSoundManagerにする<br>
-空のオブジェクトにSoundManagerをアタッチする<br>
-空のオブジェクトにAudoSorceをアタッチする<br>
+SoundManagerにSoundManager.csをアタッチする<br>
+SoundManagerにAudioSorceをAddCompornentする<br>
 SoundManagerにダウンロードしたサウンドをシリアライズする<br>
-SoundManagerにAudioSorceをアタッチする<br>
+SoundManagerにAudioSorceをシリアライズする<br>
 
 # サウンドが重複して再生されない問題を解決する
 現在のサウンドマネージャーの設定だとサウンドが<br>
