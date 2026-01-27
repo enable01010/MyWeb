@@ -31,3 +31,21 @@ EnemyHitMaster.csとEnemyAi.csを変更します。<br>
 <img src="Image/3DTPS/EnemyAi_Dead0.png"><br>
 <img src="Image/3DTPS/EnemyAi_Dead1.png"><br>
 <img src="Image/3DTPS/EnemyAi_Dead2.png"><br>
+
+# シーンの切り替え処理を作成する
+シーンの切り替えを実装します。<br>
+ゴールとシーンをフェードする処理を作成してください。<br>
+SceneLoadManager.cs<br>
+<img src="Image/3DTPS/SceneLoadManager0.png"><br>
+<img src="Image/3DTPS/SceneLoadManager1.png"><br>
+<img src="Image/3DTPS/SceneLoadManager2.png"><br>
+Goal.cs<br>
+<img src="Image/3DTPS/Goal.png"><br>
+
+Unity作業<br>
+Canvasを新しく作成して、SceneLoadMangaerをつける<br>
+Canvasの中にImageを作成して、サイズを1920：1080にする<br>
+Imageの位置を1920：0にする<br>
+Tanksのプレハブの中にあるTemporaryInvincibilityをシーンに設置する<br>
+TemporaryInvincibilityのPowerUpを削除する<br>
+TemporaryInvincibilityにGoalをアタッチする<br>
