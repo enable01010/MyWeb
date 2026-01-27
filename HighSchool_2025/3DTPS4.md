@@ -74,4 +74,8 @@ SoundManagerにAudioSorceをアタッチする<br>
 現在のサウンドマネージャーの設定だとサウンドが<br>
 一つしか再生できないようになっています。<br>
 複数のSEが同時に再生できるようにしましょう。<br>
+<img src="Image/3DTPS/SoundManager_Bug.png"><br>
 
+SoundManagerの中に空オブジェクトを作成して、AudioSorceをアタッチする<br>
+それをコピーして１０個くらい作る<br>
+作った１０個をSoundManagerにシリアライズする<br>
