@@ -50,3 +50,14 @@ Imageの位置を1920：0にする<br>
 Tanksのプレハブの中にあるTemporaryInvincibilityをシーンに設置する<br>
 TemporaryInvincibilityのPowerUpを削除する<br>
 TemporaryInvincibilityにGoalをアタッチする<br>
+
+# 音をつける
+玉を撃った時や敵を倒した際に音がなるようにしましょう。<br>
+SoundManager.csを作成してください。<br>
+<img src="Image/3DTPS/SoundManager1.png"><br>
+<img src="Image/3DTPS/SoundManager2.png"><br>
+音を鳴らす側にも修正を入れます。<br>
+EnemyAi.cs
+<img src="Image/3DTPS/EnemyAi_Sound.png"><br>
+TPSShooterTap.cs
+<img src="Image/3DTPS/TPSShooterTap_Sound.png"><br>
