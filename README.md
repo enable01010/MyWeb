@@ -8,3 +8,6 @@
     <li><a href="#/2026/HighSchool_2024/Title.md">高等部　3年生</a></li>
     <li><a href="#/2026/VocationalSchool_2026/Title.md">専門部　1年生</a></li>
 </ul>
+
+
+<iframe src="#/Pdf/pdfTest.pdf" width="100%"></iframe>
