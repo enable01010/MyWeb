@@ -10,4 +10,4 @@
 </ul>
 
 
-<iframe src="#/Pdf/pdfTest.pdf" width="100%"></iframe>
+<iframe src="./Pdf/pdfTest.pdf" width="100%"></iframe>
