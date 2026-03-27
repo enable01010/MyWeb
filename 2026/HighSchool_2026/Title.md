@@ -1,6 +1,5 @@
 ﻿# 2026年　高校_1年生用ページ
 
 <ul class="nav-dropdown">
-    <li><a href="#/Document/Paiza/First.md">Paiza基礎</a></li>
-    <li><a href="#/Document/Paiza/UsefuleMethod.md">使いこなせると有利な機能</a></li>
+    <li><a href="#/Document/C/First.md">C言語　入力出力</a></li>
 </ul>
