@@ -21,3 +21,7 @@
 [FizzBuzz C#編](https://paiza.jp/works/mondai/conditions_branch/conditions_branch__mod_boss/edit?language_uid=c-sharp)<br>
 [奇数だけ出力](https://paiza.jp/works/mondai/loop_problems2/loop_problems2__even_output?language_uid=c-sharp)<br>
 [割り切れる数だけ出力](https://paiza.jp/works/mondai/loop_problems2/loop_problems2__div_output?language_uid=c-sharp)<br>
+
+配列問題<br>
+[荷物検査](https://paiza.jp/works/mondai/rank_test_problems_c_0001/rank_test_problems_c_0001__3/edit?language_uid=c-sharp)<br>
+[配列を参照する操作】全ての要素に対する操作](https://paiza.jp/works/mondai/array_utilization_primer/array_utilization_primer__map?language_uid=c-sharp)<br>
