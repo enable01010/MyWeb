@@ -1,4 +1,4 @@
-﻿# 2026年　高校_1年生用ページ
+# 2026年　高校_1年生用ページ
 
 <ul class="nav-dropdown">
     <li><a href="#/Document/C/First.md">C言語　入力出力</a></li>
@@ -8,4 +8,5 @@
     <li><a href="#/Document/C/004_Array2D.md">多次元配列</a></li>
     <li><a href="#/Document/C/004.9.md">復習</a></li>
     <li><a href="#/Document/C/005_Func.md">関数</a></li>
+    <li><a href="#/Document/C/006_Struct.md">構造体</a></li>
 </ul>
