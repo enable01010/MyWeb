@@ -8,4 +8,5 @@
     <li><a href="#/Document/Paiza/CSystem.md">C系列の言語仕様</a></li>
     <li><a href="#/Document/Paiza/float.md">2進数　浮動小数点</a></li>
     <li><a href="#/Document/Paiza/Super.md">継承</a></li>
+    <li><a href="#/Document/C_hurikaeri/UnityPattern.md">デザインパターン</a></li>
 </ul>
