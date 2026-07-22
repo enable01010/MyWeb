@@ -9,4 +9,5 @@
     <li><a href="#/Document/Paiza/float.md">2進数　浮動小数点</a></li>
     <li><a href="#/Document/Paiza/Super.md">継承</a></li>
     <li><a href="#/Document/C_hurikaeri/UnityPattern.md">デザインパターン</a></li>
+    <li><a href="#/Document/C_hurikaeri/UnityPattern2.md">オブジェクトプール・コマンドパターン</a></li>
 </ul>
