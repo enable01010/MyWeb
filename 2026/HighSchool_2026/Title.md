@@ -10,5 +10,5 @@
     <li><a href="#/Document/C/005_Func.md">関数</a></li>
     <li><a href="#/Document/C/006_Struct.md">構造体</a></li>
     <li><a href="#/Document/C/007_class.md">列挙体・クラス</a></li>
-    <li><a href="#/Document/C/007.1md">復習特別授業</a></li>
+    <li><a href="#/Document/C/007.1.md">復習特別授業</a></li>
 </ul>
