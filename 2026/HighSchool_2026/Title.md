@@ -12,4 +12,5 @@
     <li><a href="#/Document/C/007_class.md">列挙体・クラス</a></li>
     <li><a href="#/Document/C/007.1.md">復習特別授業</a></li>
     <li><a href="#/Document/C/008_Test_Crefarence.md">テスト解説・C言語仕様・２進数</a></li>
+    <li><a href="#/Document/C/009_ClassOver.md">クラス実践</a></li>
 </ul>
