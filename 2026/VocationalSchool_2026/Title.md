@@ -11,4 +11,5 @@
     <li><a href="#/Document/C/006_Struct.md">構造体</a></li>
     <li><a href="#/Document/C/007_class.md">列挙体・クラス</a></li>
     <li><a href="#/Document/C/008_Test_Crefarence.md">テスト解説・C言語仕様・２進数</a></li>
+    <li><a href="#/Document/C/011_Refact.md">リファクタリング</a></li>
 </ul>
