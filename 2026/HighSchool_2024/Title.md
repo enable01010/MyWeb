@@ -14,4 +14,5 @@
     <li><a href="#/Document/C_hurikaeri/UnityPattern4.md">ステートパターン2</a></li>
     <li><a href="#/Document/C_hurikaeri/ProgramSPITestAnswer.md">プログラム・SPIテスト解説</a></li>
     <li><a href="#/Document/C_hurikaeri/Git1.md">Git</a></li>
+    <li><a href="#/Document/C_hurikaeri/PCPart.md">PCパーツ</a></li>
 </ul>
