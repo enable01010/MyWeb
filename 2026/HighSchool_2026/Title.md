@@ -15,4 +15,5 @@
     <li><a href="#/Document/C/009_ClassOver.md">クラス実践</a></li>
     <li><a href="#/Document/C/010_Sinsakai.md">審査会の前に</a></li>
     <li><a href="#/Document/C/011_Refact.md">リファクタリング</a></li>
+    <li><a href="#/Document/C/012_Refact2.md">リファクタリング2</a></li>
 </ul>
