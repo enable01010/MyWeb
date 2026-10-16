@@ -2,4 +2,5 @@
 
 <ul class="nav-dropdown">
     <li><a href="#/Document/Beginner/IO.md">PAIZA D 入力出力</a></li>
+    <li><a href="#/Document/Beginner/if_Calc.md">PAIZA D~C 簡単な計算とif~</a></li>
 </ul>
