@@ -13,4 +13,5 @@
     <li><a href="#/Document/C/008_Test_Crefarence.md">テスト解説・C言語仕様・２進数</a></li>
     <li><a href="#/Document/C/011_Refact.md">リファクタリング</a></li>
     <li><a href="#/Document/C/012_Refact2.md">リファクタリング2</a></li>
+    <li><a href="#/Document/C/013_Refact3.md">リファクタリング3</a></li>
 </ul>
