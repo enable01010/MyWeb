@@ -15,4 +15,5 @@
     <li><a href="#/Document/C_hurikaeri/ProgramSPITestAnswer.md">プログラム・SPIテスト解説</a></li>
     <li><a href="#/Document/C_hurikaeri/Git1.md">Git</a></li>
     <li><a href="#/Document/C_hurikaeri/PCPart.md">PCパーツ</a></li>
+    <li><a href="#/Document/C_hurikaeri/SQL1.md">SQL1</a></li>
 </ul>
