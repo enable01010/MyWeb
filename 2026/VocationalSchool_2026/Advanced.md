@@ -2,4 +2,5 @@
 <ul class="nav-dropdown">
     <li><a href="#/Document/Advanced/Singleton.md">デザインパターン　シングルトン</a></li>
     <li><a href="#/Document/Advanced/Singleton2.md">デザインパターン　シングルトン実践</a></li>
+    <li><a href="#/Document/Advanced/Singleton3.md">デザインパターン　シングルトン実践2</a></li>
 </ul>
