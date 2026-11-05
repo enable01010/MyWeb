@@ -4,4 +4,5 @@
     <li><a href="#/Document/Beginner/IO.md">PAIZA D 入力出力</a></li>
     <li><a href="#/Document/Beginner/if_Calc.md">PAIZA D~C 簡単な計算とif~</a></li>
     <li><a href="#/Document/Beginner/if_for.md">PAIZA C if forの重点的な振り返り</a></li>
+    <li><a href="#/Document/Intermediate/string.md">PAIZA C 文字列操作</a></li>
 </ul>
