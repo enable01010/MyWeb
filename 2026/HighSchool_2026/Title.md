@@ -18,4 +18,5 @@
     <li><a href="#/Document/C/012_Refact2.md">リファクタリング2</a></li>
     <li><a href="#/Document/C/013_Refact3.md">リファクタリング3</a></li>
     <li><a href="#/Document/C/014_Refact4.md">リファクタリング4</a></li>
+    <li><a href="#/Document/C/015_Refact5.md">リファクタリング5</a></li>
 </ul>
