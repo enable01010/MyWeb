@@ -15,5 +15,5 @@
     <li><a href="#/Document/C_hurikaeri/Singleton.md">シングルトンの活用したカメラの作成</a></li>
     <li><a href="#/Document/C_hurikaeri/GameSystem.md">ゲームでよく使うシステム</a></li>
     <li><a href="#/Document/C_hurikaeri/Save.md">セーブ</a></li>
-    <li><a href="#/Document/C_hurikaeri/Save.md">ゲームの工夫</a></li>
+    <li><a href="#/Document/C_hurikaeri/GameStyle.md">ゲームの工夫</a></li>
 </ul>
