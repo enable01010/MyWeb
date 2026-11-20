@@ -4,4 +4,5 @@
     <li><a href="#/Document/Advanced/Singleton2.md">デザインパターン　シングルトン実践</a></li>
     <li><a href="#/Document/Advanced/Singleton3.md">デザインパターン　シングルトン実践2</a></li>
     <li><a href="#/Document/Advanced/Save.md">セーブ</a></li>
+    <li><a href="#/Document/C_hurikaeri/GameStyle.md">ゲームの工夫</a></li>
 </ul>
